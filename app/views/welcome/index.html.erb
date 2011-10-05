@@ -1,0 +1,9 @@
+<h1>Hi Tom</h1>
+<p>This is gonna be your new application</p>
+<p>Click the following link to see sign up form or user registration form <br /><%= link_to 'Sign Up', :signup %></p>
+<p>Click the following link to see your login and experiment the login <br /><%= link_to 'Login', :login%></p>
+<% if current_user %>
+<h1>Hello <%= current_user.login %></h1>
+<h3>You can log out by clicking the following link</h3>
+<p><%= link_to 'Log out', :logout %></p>
+<% end %>

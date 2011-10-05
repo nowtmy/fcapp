@@ -1,0 +1,11 @@
+ <%= form_for @user_session, :url => {:action => "create"} do |f| %>
+      <div class="labels">
+      <%= f.label :login %><br />
+      <%= f.label :password %><br/>
+      </div>
+      <div class="inputs">
+      <%= f.text_field :login, :class => "biz_field"  %><br />
+      <%= f.password_field :password, :class => "biz_field"  %><br/>
+      <%= f.submit :login %>
+      </div>
+  <% end %>
