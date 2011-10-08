@@ -35,7 +35,7 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/user_sessions/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1199" selection-end="1199" vertical-scroll-proportion="-25.0">
+            <state line="6" column="14" selection-start="209" selection-end="209" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="21" selection-start="33" selection-end="33" vertical-scroll-proportion="0.02617801">
+            <state line="1" column="16" selection-start="28" selection-end="28" vertical-scroll-proportion="0.02617801">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="10" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
+            <state line="257" column="2" selection-start="4256" selection-end="4256" vertical-scroll-proportion="-7.6666665">
               <folding />
             </state>
           </provider>
@@ -123,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/migrate/20111005181055_create_users.rb" />
         <option value="$PROJECT_DIR$/app/models/user_session.rb" />
@@ -136,8 +135,9 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/space.css" />
-        <option value="$PROJECT_DIR$/app/views/user_sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/public/stylesheets/bootstrap.css" />
+        <option value="$PROJECT_DIR$/app/views/user_sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
       </list>
     </option>
@@ -735,21 +735,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
+        <state line="257" column="2" selection-start="4256" selection-end="4256" vertical-scroll-proportion="-7.6666665">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/user_sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1199" selection-end="1199" vertical-scroll-proportion="-25.0">
+        <state line="6" column="14" selection-start="209" selection-end="209" vertical-scroll-proportion="-3.75">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="21" selection-start="33" selection-end="33" vertical-scroll-proportion="0.02617801">
+        <state line="1" column="16" selection-start="28" selection-end="28" vertical-scroll-proportion="0.02617801">
           <folding />
         </state>
       </provider>

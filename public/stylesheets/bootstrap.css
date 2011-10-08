@@ -256,6 +256,7 @@ a:hover {
 .row {
   zoom: 1;
   margin-left: -20px;
+
 }
 .row:before, .row:after {
   display: table;
