@@ -6,25 +6,25 @@
   </div>
   <div class="login_box">
     <div class="row">
-    <div class="span12">
-      <center><h3>
+    <div class="span10">
+      <p class="account-info">
         Enter your email and password to access your account
-      </h3></center>
+      </p>
     </div>
   </div>
-  <div class="clear3"></div>
+  <div class="clear2"></div>
     <%= form_for @user_session, :class=>'form-stacked', :url => {:action => "create"} do |f| %>
-        <div class="span5">
+        <div class="span3">
           <p>
-            <%= f.label :login, 'Login', :class => 'label important' %>
+            <%= f.label :login, 'Login', :class => 'label important label-right' %>
           </p>
           <div class="clear2"></div>
           <p>
-            <%= f.label :password, 'Password', :class => 'label important' %>
+            <%= f.label :password, 'Password', :class => 'label important label-right' %>
           </p>
         </div>
 
-        <div class="span6">
+        <div class="span5">
           <p>
             <%= f.text_field :login, :class => 'xlarge' %>
           </p>

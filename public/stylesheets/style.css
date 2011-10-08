@@ -1,7 +1,7 @@
 .login_box{
-    width: 700px;
+    width: 550px;
     height: auto;
-    margin: auto;
+    margin: auto auto -10px auto;
     padding: 20px;
     border: #cbdcee 2px solid;
     -moz-border-radius: 10px;
@@ -10,4 +10,15 @@
 
 .logo{
     background: url("/images/flycertlogo_glow.png") no-repeat top center;
+}
+
+.label-right
+{
+    float: right;
+}
+
+p.account-info{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 5px;
 }
