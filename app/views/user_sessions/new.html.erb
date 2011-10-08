@@ -2,7 +2,7 @@
   <div class="clear3"></div>
   <div class="hero-unit logo">
     <div class="clear5" style="margin-top: 20px;"></div>
-    <center><h2>FlyCert Electrical Demonstration Account</h2></center>
+    <center><h3 class="account-type-info">FlyCert Electrical Demonstration Account</h3></center>
   </div>
   <div class="login_box">
     <div class="row">
@@ -16,11 +16,11 @@
     <%= form_for @user_session, :class=>'form-stacked', :url => {:action => "create"} do |f| %>
         <div class="span3">
           <p>
-            <%= f.label :login, 'Login', :class => 'label label-right' %>
+            <%= f.label :login, 'Email', :class => 'label label-right' %>
           </p>
-          <div class="clear2"></div>
+          <div class="clear1"></div>
           <p>
-            <%= f.label :password, 'Password', :class => 'label label-right' %>
+            <%= f.label :password, 'Password', :class => 'label label-right ' %>
           </p>
         </div>
 
@@ -29,7 +29,7 @@
             <%= f.text_field :login, :class => 'xlarge' %>
           </p>
           <p>
-            <%= f.password_field :password, :class => 'xlarge' %>
+            <%= f.password_field :password, :class => 'xlarge less-width-textarea' %><%= link_to 'Forget Password', '#', :class => 'forget-link' %>
           </p>
         </div>
         <div class="clear2" style="clear: both;"></div>

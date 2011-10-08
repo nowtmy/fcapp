@@ -1,5 +1,5 @@
 .login_box{
-    width: 550px;
+    width: 525px;
     height: auto;
     margin: auto auto -10px auto;
     padding: 20px;
@@ -14,11 +14,37 @@
 
 .label-right
 {
+    width: 92px;
+    height: 22px;
+    font-size: 10px;
+    margin-bottom: 15px;
     float: right;
+    margin-right: 25px;
+    font-weight: lighter;
 }
 
 p.account-info{
     font-size: 15px;
     text-align: center;
     margin-bottom: 5px;
+    color: #535353;
+}
+
+input.less-width-textarea{
+    width: 160px;
+}
+
+.forget-link{
+    text-decoration: underline;
+    color: #6b6b6b;
+    margin-left: 12px;
+}
+
+.account-type-info{
+    color: #725c5c;
+}
+
+.modified-footer{
+  border: none;
+  color: #6b6b6b;
 }

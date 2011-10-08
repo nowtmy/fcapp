@@ -2303,7 +2303,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   opacity: 1;
 }
 .label {
-  padding: 1px 3px 2px;
+  padding: 2px 3px;
   background-color: #bfbfbf;
   font-size: 9.75px;
   font-weight: bold;
