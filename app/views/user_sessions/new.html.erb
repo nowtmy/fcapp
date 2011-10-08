@@ -14,7 +14,7 @@
   </div>
   <div class="clear3"></div>
     <%= form_for @user_session, :class=>'form-stacked', :url => {:action => "create"} do |f| %>
-        <div class="span4">
+        <div class="span5">
           <p>
             <%= f.label :login, 'Login', :class => 'label important' %>
           </p>
@@ -32,12 +32,12 @@
             <%= f.password_field :password, :class => 'xlarge' %>
           </p>
         </div>
-        <div class="clear3" style="clear: both;"></div>
+        <div class="clear2" style="clear: both;"></div>
         <center>
           <%= f.submit 'Login', :class => "btn primary" %>
         </center>
     <% end %>
   </div>
 
-  <div class="clear5"></div>
+  <div class="clear2"></div>
 </div>
