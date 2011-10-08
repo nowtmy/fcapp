@@ -4,9 +4,9 @@
     <div class="clear2"></div>
     <center><h2>FlyCert Electrical Demonstration Account</h2></center>
   </div>
-  <div class="login_box">
+  <div class="row login_box">
     <div class="row">
-    <div class="span20">
+    <div class="span15">
       <h3>
         Enter your email and password to access your account
       </h3>
@@ -14,7 +14,6 @@
   </div>
   <div class="clear3"></div>
     <%= form_for @user_session, :class=>'form-stacked', :url => {:action => "create"} do |f| %>
-
         <div class="span4">
           <p>
             <%= f.label :login, 'Login', :class => 'label important' %>
@@ -37,7 +36,6 @@
         <div class="span12" style="float: right;">
           <%= f.submit 'Login', :class => "btn primary" %>
         </div>
-
     <% end %>
   </div>
 
