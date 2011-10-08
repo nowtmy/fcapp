@@ -1,11 +1,45 @@
- <%= form_for @user_session, :url => {:action => "create"} do |f| %>
-      <div class="labels">
-      <%= f.label :login %><br />
-      <%= f.label :password %><br/>
-      </div>
-      <div class="inputs">
-      <%= f.text_field :login, :class => "biz_field"  %><br />
-      <%= f.password_field :password, :class => "biz_field"  %><br/>
-      <%= f.submit :login %>
-      </div>
-  <% end %>
+<div class="container">
+  <div class="clear3"></div>
+  <div class="hero-unit logo">
+    <div class="clear2"></div>
+    <center><h2>FlyCert Electrical Demonstration Account</h2></center>
+  </div>
+  <div class="row login_box">
+    <div class="row">
+    <div class="span20">
+      <h3>
+        Enter your email and password to access your account
+      </h3>
+    </div>
+  </div>
+  <div class="clear3"></div>
+    <%= form_for @user_session, :class=>'form-stacked', :url => {:action => "create"} do |f| %>
+
+        <div class="span4">
+          <p>
+            <%= f.label :login, 'Login', :class => 'label important' %>
+          </p>
+          <div class="clear2"></div>
+          <p>
+            <%= f.label :password, 'Password', :class => 'label important' %>
+          </p>
+        </div>
+
+        <div class="span6">
+          <p>
+            <%= f.text_field :login, :class => 'xlarge' %>
+          </p>
+          <p>
+            <%= f.password_field :password, :class => 'xlarge' %>
+          </p>
+        </div>
+        <div class="clear3" style="clear: both;"></div>
+        <div class="span12" style="float: right;">
+          <%= f.submit 'Login', :class => "btn primary" %>
+        </div>
+
+    <% end %>
+  </div>
+
+  <div class="clear5"></div>
+</div>

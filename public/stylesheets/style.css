@@ -1,0 +1,10 @@
+.login_box{
+    padding: 40px;
+    border: #cbdcee 2px solid;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+
+.logo{
+    background: url("/images/flycertlogo_glow.png") no-repeat top center;
+}
