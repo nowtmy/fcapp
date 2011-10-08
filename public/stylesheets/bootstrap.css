@@ -1690,7 +1690,7 @@ a.menu:after, .dropdown-toggle:after {
 }
 .hero-unit {
   background-color: #f5f5f5;
-  margin-bottom: 0;
+  margin-bottom: -40px;
   padding: 60px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
