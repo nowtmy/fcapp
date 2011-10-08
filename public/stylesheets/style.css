@@ -1,7 +1,8 @@
 .login_box{
-    width: auto;
-    margin: 10px auto;
-    padding: 20px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
     border: #cbdcee 2px solid;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
