@@ -84,5 +84,8 @@ input.less-width-textarea{
 .signupbox{
     width: 650px;
     margin: 0 auto;
+}
 
+a.signuplink {
+    padding-bottom: -10px;
 }
