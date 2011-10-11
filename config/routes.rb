@@ -1,4 +1,6 @@
 Web::Application.routes.draw do
+  resources :contacts
+
   get "welcome/index"
 
   resources :user_sessions
@@ -59,7 +61,7 @@ Web::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => "welcome#index", :as => :root
+   root :to => "contacts#new", :as => :root
 
   # See how all your routes lay out with "rake routes"
 

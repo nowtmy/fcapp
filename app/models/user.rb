@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  acts_as_authentic
+  acts_as_authentic do |c| c.login_field = :email end
   attr_accessor :first_name
   attr_accessor :last_name
 
@@ -12,5 +12,12 @@ class User < ActiveRecord::Base
     self.username += " "
     self.username += value
   end
+
+  private
+
+  def self.login_by_email(login)
+    find_by_email(login)
+  end
+
 
 end

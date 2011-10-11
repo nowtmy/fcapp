@@ -6,18 +6,19 @@
   </div>
   <div class="login_box">
     <div class="row">
-    <div class="span10">
-      <p class="account-info">
-        Enter your email and password to access your account
-      </p>
+      <div class="span10">
+        <p class="account-info">
+          Enter your email and password to access your account
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="clear2"></div>
+    <div class="clear2"></div>
     <%= form_for @user_session, :class=>'form-stacked', :url => {:action => "create"} do |f| %>
         <div class="span3">
           <p>
-            <%= f.label :login, 'Email', :class => 'label label-right' %>
+            <%= f.label :email, 'Email', :class => 'label label-right' %>
           </p>
+
           <div class="clear1"></div>
           <p>
             <%= f.label :password, 'Password', :class => 'label label-right ' %>
@@ -26,8 +27,9 @@
 
         <div class="span5">
           <p>
-            <%= f.text_field :login, :class => 'xlarge' %>
+            <%= f.text_field :email, :class => 'xlarge' %>
           </p>
+
           <p>
             <%= f.password_field :password, :class => 'xlarge less-width-textarea' %><%= link_to 'forgot password', '#', :class => 'forget-link' %>
           </p>
@@ -35,9 +37,12 @@
         <div class="clear2" style="clear: both;"></div>
         <center>
           <%= f.submit 'Login', :class => "btn primary" %>
+          <div class="clear2"></div>
+          <div class="signuplink">Not Registered? <%= link_to 'Register', :signup %></div>
         </center>
     <% end %>
   </div>
 
   <div class="clear2"></div>
+
 </div>

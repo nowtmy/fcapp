@@ -1,0 +1,137 @@
+<div id="addContact">
+  <hr/>
+  <div class="addContactTitle">Add Contact</div>
+  <hr/>
+</div>
+<div id="contactForm" style="display: none">
+  <%= form_for(@contact) do |f| %>
+      <% if @contact.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+            <ul>
+              <% @contact.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+
+
+      <div class="row">
+        <div class="span5">
+          <p>
+            <%= f.label :firstname, 'First Name', :class => 'normal-label' %>
+          </p>
+
+          <p>
+            <%= f.label :secondname, 'Second Name', :class => 'normal-label' %>
+          </p>
+
+          <p>
+            <%= f.label :company, 'Company', :class => 'normal-label' %>
+          </p>
+
+          <p>
+            <%= f.label :telephone, 'Telephone', :class => 'normal-label' %>
+          </p>
+
+          <p>
+            <%= f.label :mobile, 'Mobile', :class => 'normal-label' %>
+          </p>
+
+          <p>
+            <%= f.label :email, 'Email', :class => 'normal-label' %>
+          </p>
+        </div>
+        <div class="span3">
+          <p>
+            <%= f.text_field :firstname, :class => 'normal-input xlarge' %>
+          </p>
+
+          <p>
+            <%= f.text_field :secondname, :class => 'normal-input xlarge' %>
+          </p>
+
+          <p>
+            <%= f.text_field :company, :class => 'normal-input xlarge' %>
+          </p>
+
+          <p>
+            <%= f.text_field :telephone, :class => 'normal-input xlarge' %>
+          </p>
+
+          <p>
+            <%= f.text_field :mobile, :class => 'normal-input xlarge' %>
+          </p>
+
+          <p>
+            <%= f.text_field :email, :class => 'normal-input xlarge' %>
+          </p>
+        </div>
+        <div class="span5">
+          <p>
+            <%= f.label :addressline1, 'Address Line 1', :class => 'normal-label' %>
+          </p>
+
+          <p>
+            <%= f.label :addressline2, 'Address Line 2', :class => 'normal-label' %>
+          </p>
+
+          <p>
+            <%= f.label :addressline3, 'Address Line 3', :class => 'normal-label' %>
+          </p>
+
+          <p>
+            <%= f.label :city, 'City', :class => 'normal-label' %>
+          </p>
+
+          <p>
+            <%= f.label :country, 'Country', :class => 'normal-label' %>
+          </p>
+
+          <p>
+            <%= f.label :postcode, 'Post Code', :class => 'normal-label' %>
+          </p>
+        </div>
+
+        <div class="span3">
+          <p>
+            <%= f.text_field :addressline1, :class => 'normal-input xlarge' %>
+          </p>
+
+          <p>
+            <%= f.text_field :addressline2, :class => 'normal-input xlarge' %>
+          </p>
+
+          <p>
+            <%= f.text_field :addressline3, :class => 'normal-input xlarge' %>
+          </p>
+
+          <p>
+            <%= f.text_field :city, :class => 'normal-input xlarge' %>
+          </p>
+
+          <p>
+            <%= f.text_field :country, :class => 'normal-input xlarge' %>
+          </p>
+
+          <p>
+            <%= f.text_field :postcode, :class => 'normal-input xlarge' %>
+          </p>
+        </div>
+        <div class="clear3"></div>
+
+        <div class="addContactButton"><%= f.submit 'Add Contact', :class => 'btn' %></div>
+
+      </div>
+  <% end %>
+  <hr />
+</div>
+<%= content_for :js do %>
+    <script type="text/javascript">
+        $('#addContact').click(function(){
+            $("#contactForm").toggle(1000);
+        });
+    </script>
+<% end %>

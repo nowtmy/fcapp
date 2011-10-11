@@ -49,3 +49,40 @@ input.less-width-textarea{
   border: none;
   color: #6b6b6b;
 }
+
+.normal-label{
+    padding: 15px;
+    font-size: 15px;
+    float: right;
+}
+
+.normal-input{
+    padding: 10px;
+}
+
+.addContactTitle{
+    font-size: 18px;
+    padding:0 0;
+    text-align: center;
+    cursor: inherit;
+}
+
+.addContactTitle:hover{
+    color: inherit;
+}
+
+#addContact:hover{
+    background-color: #616161;
+    color: #bdddff;
+    cursor: pointer;
+}
+
+.addContactButton{
+    text-align: center;
+}
+
+.signupbox{
+    width: 650px;
+    margin: 0 auto;
+
+}
