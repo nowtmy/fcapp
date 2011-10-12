@@ -60,11 +60,24 @@ input.less-width-textarea{
     padding: 10px;
 }
 
+.contantWrapper{
+    width: 980px;
+    margin: 0 auto;
+}
+
+.contactListing{
+
+}
+
 .addContactTitle{
-    font-size: 18px;
-    padding:0 0;
-    text-align: center;
+    background-color: #222222;
+    border: 1px #424242 solid;
+    font-size: 13px;
+    padding:5px 20px;
+    text-align: left;
     cursor: inherit;
+    color: #b9dbff;
+
 }
 
 .addContactTitle:hover{
@@ -72,7 +85,7 @@ input.less-width-textarea{
 }
 
 #addContact:hover{
-    background-color: #616161;
+    background-color: #8c8c8c;
     color: #bdddff;
     cursor: pointer;
 }
@@ -88,4 +101,15 @@ input.less-width-textarea{
 
 a.signuplink {
     padding-bottom: -10px;
+}
+
+.contactBar{
+    padding: 5px;
+    cursor: pointer;
+    background-color: #c1c1c1;
+    color:#0069d6;
+}
+
+#contactBar:hover{
+    background-color: #999999;
 }

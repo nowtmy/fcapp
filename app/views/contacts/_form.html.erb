@@ -1,10 +1,11 @@
 <div id="addContact">
-  <hr/>
-  <div class="addContactTitle">Add Contact</div>
-  <hr/>
+  <div class="addContactTitle">
+    Add Contact
+  </div>
 </div>
+<div class="clear1"></div>
 <div id="contactForm" style="display: none">
-  <%= form_for(@contact) do |f| %>
+  <%= form_for(@contact, :remote => true) do |f| %>
       <% if @contact.errors.any? %>
           <div id="error_explanation">
             <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
@@ -19,7 +20,8 @@
 
 
       <div class="row">
-        <div class="span5">
+        <div class="clear2"></div>
+        <div class="span3">
           <p>
             <%= f.label :firstname, 'First Name', :class => 'normal-label' %>
           </p>
@@ -120,7 +122,7 @@
             <%= f.text_field :postcode, :class => 'normal-input xlarge' %>
           </p>
         </div>
-        <div class="clear3"></div>
+        <div class="clear2"></div>
 
         <div class="addContactButton"><%= f.submit 'Add Contact', :class => 'btn' %></div>
 
