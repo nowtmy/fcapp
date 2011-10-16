@@ -26,7 +26,7 @@
       <file leaf-file-name="signup.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/signup.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="27" selection-start="562" selection-end="562" vertical-scroll-proportion="-11.25">
+            <state line="42" column="131" selection-start="1289" selection-end="1289" vertical-scroll-proportion="-16.083334">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="signup.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/signup.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="17" selection-start="673" selection-end="673" vertical-scroll-proportion="0.59322035">
+            <state line="143" column="18" selection-start="2261" selection-end="2261" vertical-scroll-proportion="0.8220339">
               <folding />
             </state>
           </provider>
@@ -591,7 +591,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="38" y="65" width="1339" height="742" extended-state="1" />
+    <frame x="38" y="65" width="1339" height="742" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -714,9 +714,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="9" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+        <state line="1361" column="24" selection-start="26052" selection-end="26057" vertical-scroll-proportion="-17.592592">
           <folding />
         </state>
       </provider>
@@ -728,23 +728,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1361" column="24" selection-start="26052" selection-end="26057" vertical-scroll-proportion="-17.592592">
+        <state line="2" column="9" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/signup.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="27" selection-start="562" selection-end="562" vertical-scroll-proportion="-11.25">
+        <state line="42" column="131" selection-start="1289" selection-end="1289" vertical-scroll-proportion="-16.083334">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/signup.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="17" selection-start="673" selection-end="673" vertical-scroll-proportion="0.59322035">
+        <state line="143" column="18" selection-start="2261" selection-end="2261" vertical-scroll-proportion="0.8220339">
           <folding />
         </state>
       </provider>
