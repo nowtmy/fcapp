@@ -5,6 +5,7 @@
 
 body{
     background-color: #e8e8e8;
+    /*background: url('/images/bg.jpg') repeat-x;*/
 }
 .wrapper {
     background-color: #fefefe;
@@ -21,12 +22,8 @@ body{
 }
 
 .top_blue_bar {
-    height: 140px;
-    background-color: #2267df;
-    /*border-bottom: 1px solid #1f3641;*/
-    -moz-box-shadow: 8px 8px 8px #1f3641;
-    -webkit-box-shadow: 8px 8px 8px #1f3641;
-    box-shadow: 8px 8px 8px #446575;
+    height: 110px;
+    background: url("/images/headerbanner2.jpg");
 }
 
 .span-right {
