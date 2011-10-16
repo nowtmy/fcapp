@@ -28,14 +28,14 @@ body{
 
 .span-right {
     margin: 5px;
-    text-align: right;
+    text-align: center;
     float: right;
     color: #fbfdfd;
     /*border: #003f81 solid 2px;*/
 }
 
 a.signup-nav {
-    text-align: right;
+    text-align: left;
     text-decoration: underline;
     color: #fefefe;
     font-size: 13px;
