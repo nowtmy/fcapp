@@ -5,7 +5,7 @@
 
 body{
     background-color: #e8e8e8;
-    /*background: url('/images/bg.jpg') repeat-x;*/
+    background: url('/images/bg.jpg') repeat-x;
 }
 .wrapper {
     background-color: #fefefe;
@@ -23,7 +23,7 @@ body{
 
 .top_blue_bar {
     height: 110px;
-    background: url("/images/headerbanner2.jpg");
+    background: url("/images/headerbanner2.jpg") no-repeat;
 }
 
 .span-right {
