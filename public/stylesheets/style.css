@@ -91,7 +91,8 @@ input.less-width-textarea{
 }
 
 .addContactButton{
-    text-align: center;
+    text-align: left;
+    margin-left: 20px;
 }
 
 .signupbox{

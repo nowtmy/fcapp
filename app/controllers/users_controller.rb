@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
+  layout 'signup'
+
   def index
     @users = User.all
 
@@ -81,3 +83,8 @@ class UsersController < ApplicationController
     end
   end
 end
+
+private
+  def render_layout_as_default (layout)
+
+  end

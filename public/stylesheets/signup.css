@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #e8e8e8;
+}
+.wrapper {
+    background-color: #fefefe;
+    border: #c9c9c9 solid 2px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    width: 968px;
+    margin: 0 auto;
+}
+
+.nav-bar-wrapper {
+    width: 968px;
+    margin: 0 auto;
+}
+
+.top_blue_bar {
+    height: 120px;
+    background-color: #2267df;
+    /*border-bottom: 1px solid #1f3641;*/
+    -moz-box-shadow: 8px 8px 8px #1f3641;
+    -webkit-box-shadow: 8px 8px 8px #1f3641;
+    box-shadow: 8px 8px 8px #446575;
+}
+
+.span-right {
+    margin: 5px;
+    text-align: right;
+    float: right;
+    color: #fbfdfd;
+    /*border: #003f81 solid 2px;*/
+}
+
+a.signup-nav {
+    text-decoration: underline;
+    color: #e5eef8;
+    font-size: 13px;
+    padding: 5px 8px;
+    font-weight: bold;
+    font-variant: normal;
+
+}
+
+.top-bar-text p {
+    text-align: center;
+    color: #fafafa;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: #fafafa 0.5px 0.5px;
+}
+
+.top-bar-image {
+    margin-top: -20px;
+}
+
+.top-row {
+    border-top: 1.5px #c4d1dd solid;
+    border-bottom: 1.5px #c4d1dd solid;
+    margin: 20px auto;
+    width: 968px;
+    height: 60px;
+    background-color: #dedede;
+}
+
+.trial-signup-text p {
+    font-family: Helvetica;
+    margin: 12px auto;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2b71ba;
+}
+
+.signupbox{
+   margin: 20px;
+    padding: 30px;
+
+}
+
+.signup-label
+{
+    text-align: left;
+    width: 200px;
+}
+
+.spaceright{
+    padding-right: 5px;
+}
+
+.signup-title h3{
+    color: #8c8c8c;
+}
+
+input.signup-special-label{
+    width: 300px;
+}
+
+.right-corner{
+    width: 350px;
+    margin-top: 90px;
+    margin-left: -120px;
+    height: 400px;
+}
+
+span.sub-title{
+    color: #afafaf;
+    font-size: 10.5px;
+    font-weight: lighter;
+}
+
+.side-title{
+    border-bottom: 1px solid #eeeeee;
+}
+
+.title > h5{
+    color: #a8a8a8;
+    font-size: 13px;
+}
+
+p.title-desc{
+    font-size: 13px;
+    font-weight: bold;
+}

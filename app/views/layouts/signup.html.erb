@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield :title || 'flycert' %></title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :all %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<div class="row top_blue_bar">
+  <div class="nav-bar-wrapper">
+    <div class="row">
+      <div class="span11 span-right">
+        <%= link_to 'Home', '#', :class => 'signup-nav' %> |
+        <%= link_to 'About', '#', :class => 'signup-nav' %> |
+        <%= link_to 'Screenshots', '#', :class => 'signup-nav' %> |
+        <%= link_to 'Free Tour', '#', :class => 'signup-nav' %> |
+        <%= link_to 'Pricing', '#', :class => 'signup-nav' %> |
+        <%= link_to 'Signup', '#', :class => 'signup-nav' %> |
+        <%= link_to 'Contact', '#', :class => 'signup-nav' %> |
+        <%= link_to 'News & Blogs', '#', :class => 'signup-nav' %>
+      </div>
+    </div>
+    <div class="clear2"></div>
+    <div class="row">
+      <div class="span5 top-bar-image"><%= image_tag 'flycertlogo_glow.png', :width => '240' %></div>
+      <div class="span3 top-bar-text">
+        <p>
+          First | Simpler | Cheaper Online Certificatin Software for Electricians
+        </p>
+      </div>
+      <div class="span3 top-bar-text"><p>No Hidden Cost...</p></div>
+      <div class="span5 top-bar-text"><p>.....We don't charge for certificate number &amp; support is free</p></div>
+    </div>
+    <div class="clear1"></div>
+    <div class="row">
+
+    </div>
+  </div>
+</div>
+<div class="clear2"></div>
+<div class="wrapper">
+  <div class="row top-row">
+    <div class="span 10 trial-signup-text"><p>Flycert 14-day Free Trial Signup</p></div>
+  </div>
+  <div class="row">
+      <%= yield %>
+  </div>
+
+</div>
+<footer class="modified-footer">
+  <center><p>&copy; FlyCert, 2011</p></center>
+</footer>
+</body>
+</html>
+<%= yield :js %>
