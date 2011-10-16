@@ -21,7 +21,7 @@ body{
 }
 
 .top_blue_bar {
-    height: 120px;
+    height: 140px;
     background-color: #2267df;
     /*border-bottom: 1px solid #1f3641;*/
     -moz-box-shadow: 8px 8px 8px #1f3641;
@@ -39,8 +39,8 @@ body{
 
 a.signup-nav {
     text-decoration: underline;
-    color: #e5eef8;
-    font-size: 13px;
+    color: #fefefe;
+    font-size: 12px;
     padding: 5px 8px;
     font-weight: bold;
     font-variant: normal;
@@ -49,9 +49,9 @@ a.signup-nav {
 
 .top-bar-text p {
     text-align: center;
-    color: #fafafa;
+    color: #f0f0f0;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: lighter;
     font-style: italic;
     text-shadow: #fafafa 0.5px 0.5px;
 }
