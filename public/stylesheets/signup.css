@@ -37,10 +37,10 @@ body{
 a.signup-nav {
     text-decoration: underline;
     color: #fefefe;
-    font-size: 12px;
-    padding: 5px 8px;
-    font-weight: bold;
-    font-variant: normal;
+    font-size: 13px;
+    padding: 5px 2px;
+    font-variant: small-caps;
+    font-family: Arial;
 
 }
 
@@ -62,8 +62,8 @@ a.signup-nav {
     border-bottom: 1.5px #c4d1dd solid;
     margin: 20px auto;
     width: 968px;
-    height: 60px;
-    background-color: #dedede;
+    height: 58px;
+    background:url('/images/trial-title-banner_968.jpg') #dedede center left no-repeat;
 }
 
 .trial-signup-text p {
@@ -79,6 +79,11 @@ a.signup-nav {
    margin: 20px;
     padding: 30px;
 
+}
+
+a.signup-nav:hover{
+    background-color:inherit;
+    text-decoration: none;
 }
 
 .signup-label
