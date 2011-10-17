@@ -23,19 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="signup.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="signup.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/signup.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="18" selection-start="979" selection-end="979" vertical-scroll-proportion="0.7809695">
+            <state line="29" column="18" selection-start="1172" selection-end="1172" vertical-scroll-proportion="-12.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="54" selection-start="1871" selection-end="1871" vertical-scroll-proportion="-27.333334">
+            <state line="50" column="54" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.7631579">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,16 @@
       <file leaf-file-name="signup.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/signup.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="22" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+            <state line="26" column="12" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/images/signup.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="14" selection-start="0" selection-end="1699" vertical-scroll-proportion="-20.0">
               <folding />
             </state>
           </provider>
@@ -115,6 +124,7 @@
     </navigator>
     <panes>
       <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -144,24 +154,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -373,7 +365,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
     </panes>
   </component>
@@ -655,11 +646,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/contacts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="43" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/contacts/create.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="124" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" />
@@ -702,49 +688,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/space.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="16" selection-start="209" selection-end="209" vertical-scroll-proportion="0.5050505">
-          <folding />
-        </state>
+        <state line="20" column="16" selection-start="209" selection-end="209" vertical-scroll-proportion="0.5050505" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="22" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.63131315">
-          <folding />
-        </state>
+        <state line="94" column="22" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.63131315" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1361" column="24" selection-start="26052" selection-end="26057" vertical-scroll-proportion="-17.592592">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="54" selection-start="1871" selection-end="1871" vertical-scroll-proportion="-27.333334">
-          <folding />
-        </state>
+        <state line="1361" column="24" selection-start="26052" selection-end="26057" vertical-scroll-proportion="-17.592592" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="9" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+        <state line="2" column="9" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/signup.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="14" selection-start="0" selection-end="1699" vertical-scroll-proportion="-20.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/signup.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="22" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+        <state line="26" column="12" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/signup.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="18" selection-start="979" selection-end="979" vertical-scroll-proportion="0.7809695">
+        <state line="29" column="18" selection-start="1172" selection-end="1172" vertical-scroll-proportion="-12.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="54" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.7631579">
           <folding />
         </state>
       </provider>
