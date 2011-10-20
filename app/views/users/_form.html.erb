@@ -1,5 +1,5 @@
 <%= form_for(@user) do |f| %>
-    <div class="span8 signupbox">
+    <div class="span8">
       <div class="span4 spaceright signup-title">
         <h3>Enter your details below</h3>
       </div>
@@ -14,28 +14,30 @@
       </div>
       <div class="clear1"></div>
       <div class="span4">
-        <%= f.label :email, :class => 'signup-label' %>
+        <%= f.label :email,'Email Address' ,:class => 'signup-label' %>
         <div class="clear1"></div>
         <%= f.text_field :email, :class => 'signup-special-label' %>
       </div>
       <div class="clear1"></div>
       <div class="span4">
-        <%= f.label :address, :class => 'signup-label' %>
-        <div class="clear"></div>
-        <%= f.text_field :address, :class => 'signup-special-label'  %>
+        <%= f.label :company,'Company / Trading' ,:class => 'signup-label' %>
+        <div class="clear1"></div>
+        <%= f.text_field :company, :class => 'signup-special-label' %>
       </div>
       <div class="clear1"></div>
-      <div class="span4">
-        <%= f.label :login, :class => 'signup-label' %>
+      <div class="span6">
+        <%= f.label :address, 'Create Your Account Address' ,:class => 'signup-label' %>
         <div class="clear"></div>
-        <%= f.text_field :login, :class => 'signup-special-label'  %>
+        <span class="extra-label-left">http://</span>
+        <span class="span5"><%= f.text_field :address, :class => 'signup-special-label special'  %></span>
+        <span class="extra-label-right">.flycert.co.uk</span>
       </div>
       <div class="clear1"></div>
       <div class="span4">
         <%= f.label :password, 'Create Your Password', :class => 'signup-label' %>
         <%= f.password_field :password %>
       </div>
-      <div class="span4">
+      <div class="span1">
         <%= f.label :password_confirmation, 'Confirm Your Password', :class => 'signup-label' %>
         <%= f.password_field :password_confirmation %>
       </div>

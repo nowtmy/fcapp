@@ -1,9 +1,9 @@
-body{
+body {
     height: 600px;
-    width: 500px;
+    width: 600px;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -24,8 +24,8 @@ body{
 
 .top_blue_bar {
     background: url("/images/flycertlogo.png") no-repeat;
-	float: auto;
-    height:80px;
+    float: auto;
+    height: 80px;
 }
 
 .span-right {
@@ -43,7 +43,7 @@ a.signup-nav {
     font-size: 13px;
     padding: 5px 0px;
     font-size: 12px;
-    font-family:Arial;
+    font-family: Arial;
     font-weight: bold;
 
 }
@@ -67,7 +67,7 @@ a.signup-nav {
     margin: 20px auto;
     width: 968px;
     height: 58px;
-    background:url('/images/central_title_freetrial.jpg') #dedede center left no-repeat;
+    background: url('/images/central_title_freetrial.jpg') #dedede center left no-repeat;
 }
 
 .trial-signup-text p {
@@ -79,81 +79,103 @@ a.signup-nav {
     color: #2b71ba;
 }
 
-.signupbox{
-   margin: 20px;
-   padding: 30px;
+.signupbox {
+    margin: 20px auto;
+    padding: 30px;
 
 }
 
-a.signup-nav:hover{
-    background-color:inherit;
+a.signup-nav:hover {
+    background-color: inherit;
     text-decoration: none;
 }
 
-.signup-label
-{
+.signup-label {
     text-align: left;
     width: 200px;
 }
 
-.spaceright{
+.spaceright {
     padding-right: 0px;
 }
 
-.signup-title h3{
+.signup-title h3 {
     color: #545454;
 }
 
-input.signup-special-label{
+input.signup-special-label {
     width: 300px;
 }
 
-.right-corner{
+.right-corner {
     width: 350px;
     margin-top: 90px;
     margin-left: -120px;
     height: 400px;
 }
 
-span.sub-title{
+span.sub-title {
     color: #afafaf;
     font-size: 10.5px;
     font-weight: lighter;
 }
 
-.side-title{
+.side-title {
     border-bottom: 1px solid #eeeeee;
 }
 
-.title > h5{
+.title > h5 {
     color: #a8a8a8;
     font-size: 13px;
 }
 
-p.title-desc{
+p.title-desc {
     font-size: 13px;
     font-weight: bold;
 }
 
-footer{
+footer {
     color: #cccccc;
     height: 40px;
-    background:  #111111 repeat;
+    background: #111111 repeat;
     margin-bottom: -50px;
 }
 
-a.footer-text{
+a.footer-text {
     text-align: left;
     text-decoration: underline;
     color: #ffffff;
     font-size: 13px;
     padding: 5px 0px;
     font-size: 12px;
-    font-family:Arial;
+    font-family: Arial;
     font-weight: bold;
 }
 
-a.footer-text:hover{
-    background-color:inherit;
+a.footer-text:hover {
+    background-color: inherit;
     text-decoration: none;
+}
+
+.special {
+    float: left;
+    margin-left: -20px;
+}
+
+span.extra-label-left {
+    float: left;
+    color: #a8a8a8;
+    font-size: 12px;
+    padding: 7px;
+    margin-right: -120px;
+    margin-left: -40px;
+}
+
+.extra-label-right {
+    color: #a8a8a8;
+    font-size: 12px;
+    padding-top: 8px;
+    float: left;
+    margin-left: 15px;
+    margin-right: -70px;
 }

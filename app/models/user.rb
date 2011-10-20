@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
-  acts_as_authentic do |c| c.login_field = :email end
+  acts_as_authentic do |d| d.validate_login_field(false) end
+  acts_as_authentic do |c| c.login_field = :email
+  end
   attr_accessor :first_name
   attr_accessor :last_name
 
