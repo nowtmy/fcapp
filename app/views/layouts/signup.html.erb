@@ -7,49 +7,9 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<div class="row top_blue_bar">
-  <div class="nav-bar-wrapper">
-    <div class="clear1"></div>
-    <div class="row">
-      <div class="span12 span-right">
-        <%= link_to 'HOME', 'http://flycert.co.uk', :class => 'signup-nav' %> |
-        <%= link_to 'ABOUT', 'http://flycert.co.uk/about', :class => 'signup-nav' %> |
-        <%= link_to 'SCREENSHOTS', 'http://flycert.co.uk/screenshots', :class => 'signup-nav' %> |
-        <%= link_to 'FREE TOUR', 'http://flycert.co.uk/tour', :class => 'signup-nav' %> |
-        <%= link_to 'PRICING', 'http://flycert.co.uk/pricing', :class => 'signup-nav' %> |
-        <%= link_to 'SIGNUP', '#', :class => 'signup-nav' %> |
-        <%= link_to 'CONTACT', 'http://flycert.co.uk/contact', :class => 'signup-nav' %> |
-        <%= link_to 'NEWS & BLOG', 'http://flycert.co.uk/blog', :class => 'signup-nav' %>
-      </div>
-    </div>
-    <div class="clear2"></div>
-    <div class="clear2"></div>
-  </div>
+<div class="row">
+  <%= yield %>
 </div>
-<div class="clear5"></div>
-<div class="wrapper">
-  <div class="row top-row">
-
-  </div>
-  <div class="row">
-      <%= yield %>
-  </div>
-
-</div>
-<footer>
-  <div class="row">
-    <div class="span10">
-        <p class="footer-text">Copyright &copy; 2011
-<a href="http://flycert.co.uk">FlyCert</a>
-&nbsp; | &nbsp;
-<a target="_blank" href="http://flycert.co.uk/sitemap.xml">Site Map</a>
-&nbsp; | &nbsp;
-<a target="_top" href="http://flycert.co.uk/privacy-policy/">Privacy Policy</a></p>
-    </div>
-
-  </div>
-</footer>
 </body>
 </html>
 <%= yield :js %>

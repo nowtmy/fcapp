@@ -1,4 +1,6 @@
 Web::Application.routes.draw do
+  get "ajax/create_user"
+
   resources :contacts
 
   get "welcome/index"
@@ -8,6 +10,7 @@ Web::Application.routes.draw do
   match '/login' => "user_sessions#new",      :as => :login
   match '/logout' => "user_sessions#destroy", :as => :logout
   match '/signup' => "users#new", :as => :signup
+ # match '/client.flycert.com:3000/signup' => "ajax/create_user"
 
 
   resources :users
