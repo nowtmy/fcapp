@@ -182,8 +182,12 @@ span.extra-label-left {
 
 a.signupcondition{
     text-decoration: none;
-    color: #0064cd;
+    color: #1238a7;
     font-weight: bold;
+}
+a.signupcondition:hover{
+    background-color: #1238a7;
+    color: #f6f6f6;
 }
 
 span.terms{
