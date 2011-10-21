@@ -26,7 +26,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="24" selection-start="1732" selection-end="1732" vertical-scroll-proportion="0.64220184">
+            <state line="27" column="44" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.28440368">
               <folding />
             </state>
           </provider>
@@ -820,7 +820,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="24" selection-start="1732" selection-end="1732" vertical-scroll-proportion="0.64220184">
+        <state line="27" column="44" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.28440368">
           <folding />
         </state>
       </provider>
