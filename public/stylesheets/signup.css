@@ -179,3 +179,9 @@ span.extra-label-left {
     margin-left: 15px;
     margin-right: -70px;
 }
+
+a.signupcondition{
+    text-decoration: none;
+    color: #0064cd;
+    font-weight: bold;
+}

@@ -26,7 +26,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="44" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.28440368">
+            <state line="49" column="185" selection-start="2191" selection-end="2191" vertical-scroll-proportion="0.83082706">
               <folding />
             </state>
           </provider>
@@ -62,7 +62,7 @@
       <file leaf-file-name="signup.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/signup.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="19" selection-start="2675" selection-end="2675" vertical-scroll-proportion="0.0">
+            <state line="185" column="22" selection-start="2923" selection-end="2923" vertical-scroll-proportion="-18.962963">
               <folding />
             </state>
           </provider>
@@ -804,13 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/signup.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="19" selection-start="2675" selection-end="2675" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/signup.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="21" selection-start="273" selection-end="273" vertical-scroll-proportion="-5.625">
@@ -818,9 +811,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/signup.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="22" selection-start="2923" selection-end="2923" vertical-scroll-proportion="-18.962963">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="44" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.28440368">
+        <state line="49" column="185" selection-start="2191" selection-end="2191" vertical-scroll-proportion="0.83082706">
           <folding />
         </state>
       </provider>
