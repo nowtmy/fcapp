@@ -185,3 +185,7 @@ a.signupcondition{
     color: #0064cd;
     font-weight: bold;
 }
+
+span.terms{
+    font-size: 10px;
+}
