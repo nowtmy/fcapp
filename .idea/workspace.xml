@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="32" selection-start="1017" selection-end="1017" vertical-scroll-proportion="-14.375">
+            <state line="1" column="23" selection-start="53" selection-end="53" vertical-scroll-proportion="0.027522936">
               <folding />
             </state>
           </provider>
@@ -68,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="signup.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/signup.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="21" selection-start="273" selection-end="273" vertical-scroll-proportion="0.24770643">
+            <state line="9" column="21" selection-start="273" selection-end="273" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
@@ -141,8 +141,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/contact.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/signup.css" />
-        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/user_sessions/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -797,13 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="32" selection-start="1017" selection-end="1017" vertical-scroll-proportion="-14.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/user_sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="107" selection-start="1548" selection-end="1548" vertical-scroll-proportion="-17.166666">
@@ -820,7 +813,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/signup.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="273" selection-end="273" vertical-scroll-proportion="0.24770643">
+        <state line="9" column="21" selection-start="273" selection-end="273" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="23" selection-start="53" selection-end="53" vertical-scroll-proportion="0.027522936">
           <folding />
         </state>
       </provider>
