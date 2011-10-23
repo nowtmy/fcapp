@@ -7,7 +7,7 @@ Web::Application.routes.draw do
 
   resources :user_sessions
 
-  match '/login' => "user_sessions#new",      :as => :login
+  match '/login' => "user_sessions#new", :as => :login
   match '/logout' => "user_sessions#destroy", :as => :logout
   match '/signup' => "users#new", :as => :signup
  # match '/client.flycert.com:3000/signup' => "ajax/create_user"

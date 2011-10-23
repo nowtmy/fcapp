@@ -41,15 +41,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/contacts/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="64" selection-start="1593" selection-end="1593" vertical-scroll-proportion="-19.208334">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_contact_listing.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/contacts/_contact_listing.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,10 +59,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20111023131001_remove_login_field_to_user.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20111023131001_remove_login_field_to_user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20111023131001_remove_login_field_to_user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="56" selection-start="125" selection-end="125" vertical-scroll-proportion="0.054744527">
+            <state line="2" column="9" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema_statements.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p290@salampages/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/schema_statements.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="267" column="10" selection-start="10364" selection-end="10364" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="46" selection-start="233" selection-end="233" vertical-scroll-proportion="0.26362038">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="17" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,8 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/contacts_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/contact.html.erb" />
         <option value="$PROJECT_DIR$/app/views/contacts/contact_listing.html.erb" />
@@ -125,6 +141,8 @@
         <option value="$PROJECT_DIR$/app/views/contacts/update.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20111023131001_remove_login_field_to_user.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -746,20 +764,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/contact.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="13" selection-start="1604" selection-end="1604" vertical-scroll-proportion="-68.888885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/clear.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/contact.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="139" selection-start="442" selection-end="442" vertical-scroll-proportion="-8.125">
@@ -844,16 +848,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p290@salampages/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/schema_statements.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="254" column="10" selection-start="9658" selection-end="9658" vertical-scroll-proportion="0.17086332">
+        <state line="51" column="17" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20111023131001_remove_login_field_to_user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="56" selection-start="125" selection-end="125" vertical-scroll-proportion="0.054744527">
+        <state line="2" column="9" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p290@salampages/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/schema_statements.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="267" column="10" selection-start="10364" selection-end="10364" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="46" selection-start="233" selection-end="233" vertical-scroll-proportion="0.26362038">
           <folding />
         </state>
       </provider>
