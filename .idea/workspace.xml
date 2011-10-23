@@ -98,7 +98,7 @@
       <file leaf-file-name="create.js.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/create.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="32" selection-start="752" selection-end="752" vertical-scroll-proportion="0.6063269">
+            <state line="24" column="12" selection-start="768" selection-end="768" vertical-scroll-proportion="0.63268894">
               <folding />
             </state>
           </provider>
@@ -871,7 +871,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/create.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="32" selection-start="752" selection-end="752" vertical-scroll-proportion="0.6063269">
+        <state line="24" column="12" selection-start="768" selection-end="768" vertical-scroll-proportion="0.63268894">
           <folding />
         </state>
       </provider>
