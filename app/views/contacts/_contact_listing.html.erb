@@ -1,0 +1,27 @@
+<% @contacts.each do |contact| %>
+        <div class="clear-half"></div>
+        <div class="row ">
+          <div class="span16 bar-row contact-row-bar-wrapper" onclick="expandContact(<%= contact.id %>); return false;">
+            <div class="span4 padding-left-15"><%= name(contact) %></div>
+            <div class="span4 padding-left-15"><%= contact.company %></div>
+            <div class="span4 padding-left-15"><%= contact.addressline1  %></div>
+            <div class="mini-menu">
+              <span class="span-float-right"><a href="#" onclick="show_profile(<%= contact.id %>)"><img src="/images/edit.png" alt="edit"></a></span>
+              <span class="span-float-right"><%= link_to (image_tag 'delete.png'), contact, :confirm => 'Are you sure you want to delete this contact?' ,:method => :delete %></span>
+            </div>
+          </div>
+          <div class="clear-half"></div>
+          <div id="contactShow"><div id="contact-desc-show_<%= contact.id %>" style="display:none;"><%= render :partial => 'contacts/contacts', :locals => {:contact => contact} %></div></div>
+          <div id="contactEdit"><div id="contact-edit-show_<%= contact.id %>" style="display:none;"><%= render :partial => 'contacts/edit', :locals => {:contact => contact} %></div></div>
+        </div>
+    <% end %>
+
+<script type="text/javascript">
+  function show_profile(id){
+      {
+          $('#contact-edit-show_'+id).slideToggle();
+          $('#contact-desc-show_'+id).slideDown();
+      }
+
+  }
+</script>

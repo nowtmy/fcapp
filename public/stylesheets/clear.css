@@ -1,0 +1,29 @@
+.clear-half
+{
+    clear: both;
+    height: 5px;
+}
+.clear {
+    clear: both;
+    height: 11.5px;
+}
+
+.clear2 {
+    clear: both;
+    height: 18px;
+}
+
+.clear3 {
+    clear: both;
+    height: 30px;
+}
+
+.clear4 {
+    clear: both;
+    height: 60px;
+}
+
+.clear5 {
+    clear: both;
+    height: 90px;
+}

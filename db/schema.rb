@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111020134402) do
+ActiveRecord::Schema.define(:version => 20111023131001) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(:version => 20111020134402) do
   create_table "users", :force => true do |t|
     t.string   "username"
     t.string   "address"
-    t.string   "login",                             :null => false
+    t.string   "login"
     t.string   "email",                             :null => false
     t.string   "crypted_password",                  :null => false
     t.string   "password_salt",                     :null => false

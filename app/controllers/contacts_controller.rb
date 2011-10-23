@@ -44,7 +44,7 @@ class ContactsController < ApplicationController
   # POST /contacts
   # POST /contacts.xml
   def create
-    @contacts= Contact.all
+    @contacts= Contact.find(:all)
     @contact = Contact.new(params[:contact])
     if @contact.save
       flash[:notice] = "Successfully created contact."
@@ -65,16 +65,11 @@ class ContactsController < ApplicationController
   # PUT /contacts/1
   # PUT /contacts/1.xml
   def update
+    @contacts= Contact.find(:all)
     @contact = Contact.find(params[:id])
-
-    respond_to do |format|
-      if @contact.update_attributes(params[:contact])
-        format.html { redirect_to(@contact, :notice => 'Contact was successfully updated.') }
-        format.xml { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml { render :xml => @contact.errors, :status => :unprocessable_entity }
-      end
+    if @contact.update_attributes(params[:contact])
+      flash[:notice] = "Successfully modified contact."
+      @contacts= Contact.all
     end
   end
 
@@ -85,7 +80,7 @@ class ContactsController < ApplicationController
     @contact.destroy
 
     respond_to do |format|
-      format.html { redirect_to(contacts_url) }
+      format.html { redirect_to root_url }
       format.xml { head :ok }
     end
   end

@@ -1,16 +1,27 @@
-<!DOCTYPE html>
 <html>
 <head>
+  <title>Contact</title>
   <title>Web</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag 'bootstrap', 'space', 'style' %>
+  <%= stylesheet_link_tag 'bootstrap', 'clear', 'contact' %>
+  <%= javascript_include_tag :all %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-<%= yield %>
-<footer class="modified-footer">
- <center><p>&copy; FlyCert, 2011</p></center>
-</footer>
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="common-wrapper">
+      <div class="row">
+        <div class="span4"><%= image_tag 'logo_topbar.png' %><%= image_tag 'certs_topbar_icon.png' %><%= image_tag 'contact_topbar_icon.png' %></div>
+        <div class="span5 top-bar-search"><input type="text" class="search-field"><span>Search</span></div>
+        <div class="span3 new-contact-link">Add A New Contact</div>
+        <div class="span3 right-panel"><span class="help">Help</span>|<span class="user"><%= current_user.username %></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clear5"></div>
+<div class="common-wrapper">
+  <%= yield %>
+</div>
 </body>
 </html>
-<%= yield :js %>

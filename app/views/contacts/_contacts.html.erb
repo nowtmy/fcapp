@@ -1,59 +1,36 @@
-<% @contacts.each do |contact| %>
-    <div class="contactBar">
-      <div id="contactTitle" onclick="expandContact(<%= contact.id %>); return false;">
-        <span class="label">Name:</span>&nbsp;<%= contact.firstname %>&nbsp;<%= contact.secondname %>
-      </div>
-    </div>
-    <div class="clear1"></div>
-    <div id="contact_no_<%= contact.id %>" style="display: none">
-      <div class="span3" style="text-align: right;">
-        <span class="label">Name</span> <br/>
-        <span class="label">Company</span> <br/>
-        <span class="label">Telephone</span> <br/>
-        <span class="label">Mobile</span> <br/>
-        <span class="label">Email</span> <br/>
-        <span class="label">Address1</span> <br/>
-        <span class="label">Address2</span> <br/>
-        <span class="label">Address3</span> <br/>
-        <span class="label">City</span> <br/>
-        <span class="label">Country</span> <br/>
-        <span class="label">Post Code</span> <br/>
-      </div>
-      <div class="span6">
-        <%= contact.firstname %>&nbsp;<%= contact.secondname %>
-        <br/>
-        <%= contact.company %>
-        <br/>
-        <%= contact.telephone %>
-        <br/>
-        <%= contact.mobile %>
-        <br/>
-        <%= contact.email %>
-        <br/>
-        <%= contact.addressline1 %>
-        <br/>
-        <%= contact.addressline2 %>
-        <br/>
-        <%= contact.addressline3 %>
-        <br/>
-        <%= contact.city %>
-        <br/>
-        <%= contact.country %>
-        <br/>
-        <%= contact.postcode %>
-        <br/>
-      </div>
-      <div class="clear2"></div>
-    </div>
-<% end %>
-<%= content_for :js do %>
-    <script type="text/javascript">
-        function expandContact(object)
-        {
-            $('#contact_no_'+object).toggle(1000);
-        }
-    </script>
+<div class="left-info" style="width: 350px; float: left">
+  <div class="span2" style="text-align: right;">
+    <div class="label-space"><span class="label">Name</span></div>
+    <div class="label-space"><span class="label">Company</span></div>
+    <div class="label-space"><span class="label">Telephone</span></div>
+    <div class="label-space"><span class="label">Mobile</span></div>
+    <div class="label-space"><span class="label">Email</span></div>
+  </div>
+  <div class="span3">
+    <div class="label-space"><%= name(contact) %></div>
+    <div class="label-space"><%= contact.company %></div>
+    <div class="label-space"><%= contact.telephone %></div>
+    <div class="label-space"><%= contact.mobile %></div>
+    <div class="label-space"><%= contact.email %></div>
+  </div>
+</div>
+<div class="right-info" style="width: 350px; float: left">
+  <div class="span2" style="text-align: right;">
+    <div class="label-space"><span class="label">Address1</span></div>
+    <div class="label-space"><span class="label">Address2</span></div>
+    <div class="label-space"><span class="label">Address3</span></div>
+    <div class="label-space"><span class="label">City</span></div>
+    <div class="label-space"><span class="label">Country</span></div>
+    <div class="label-space"><span class="label">Post Code</span></div>
+  </div>
+  <div class="span3">
+    <div class="label-space"><%= contact.addressline1 %></div>
+    <div class="label-space"><%= contact.addressline2 %></div>
+    <div class="label-space"><%= contact.addressline3 %></div>
+    <div class="label-space"> <%= contact.city  %></div>
+    <div class="label-space"><%= contact.country %></div>
+    <div class="label-space"><%= contact.postcode %></div>
+  </div>
+</div>
 
-<% end %>
-<hr/>
 
