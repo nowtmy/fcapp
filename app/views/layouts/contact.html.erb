@@ -13,7 +13,7 @@
       <div class="row">
         <div class="span4"><%= image_tag 'logo_topbar.png' %><%= image_tag 'certs_topbar_icon.png' %><%= image_tag 'contact_topbar_icon.png' %></div>
         <div class="span5 top-bar-search"><input type="text" class="search-field"><span><%= image_tag 'search_icon.png',:width=> 18,:class => 'search_icon' %></span></div>
-        <div class="span3 new-contact-link"><%= link_to 'Add A New Contact', new_contact_path %></div>
+        <div class="span3 new-contact-link"><%= link_to 'Add A New Contact', "#", :id=> 'addContactLink' %></div>
         <div class="span3 right-panel"><span class="help">Help</span>|<span class="user"><%= current_user.username %></span></div>
       </div>
     </div>
@@ -25,3 +25,9 @@
 </div>
 </body>
 </html>
+<script type="text/javascript">
+ $("#addContactLink").click(function(){
+    $('#contactForm').toggle(10);
+ });
+
+</script>
