@@ -62,12 +62,12 @@
 
 }
 
-.contact-row-bar-wrapper{
+.contact-row-bar-wrapper {
     background: url("/images/bar.png") repeat;
 
 }
 
-.new-contact-bar-p{
+.new-contact-bar-p {
     margin: 3px 20px;
     color: #333333;
     font-size: 12px;
@@ -75,53 +75,71 @@
     text-align: center;
 }
 
-.padding-left-15{
+.padding-left-15 {
     padding-left: 10px;
     color: #333333;
     font-size: 12px;
     font-weight: bold;
 }
 
-.span-float-right{
+.span-float-right {
     width: 10px;
     text-align: right;
 }
-.mini-menu{
+
+.mini-menu {
     float: right;
     margin-right: 15px;
 }
 
-.top-bar-search{
+.top-bar-search {
     margin-top: 10px;
 }
 
-.search-field{
+.search-field {
     height: 29px;
     margin-top: -5px;
 }
 
-.new-contact-link{
+.new-contact-link {
     margin: 10px;
     color: #cdcdcd;
 }
 
-.right-panel{
+.right-panel {
     margin: 10px;
     float: right;
     text-align: right;
 }
 
-.help{
+.help {
     padding-right: 10px;
-    color:  #cdcdcd;
+    color: #cdcdcd;
 }
 
-.user{
+.user {
     padding-left: 10px;
-    color:  #cdcdcd;
+    color: #cdcdcd;
 }
 
-.label-space{
+.label-space {
     height: 20px;
-    margin:3px;
+    margin: 3px;
+}
+
+.white_content {
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    padding: 16px;
+    z-index: 1002;
+    overflow: auto;
+}
+
+.search_icon {
+    margin-bottom: -8px;
+    margin-left: -21px;
+    margin-top: -1.5px -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }

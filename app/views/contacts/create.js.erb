@@ -22,7 +22,8 @@
 
   /*Replace the html of the div post_lists with the updated new one*/
   alert("Contact Create Succesfully!!");
-  $("#contactListing").html("<%= escape_javascript( render(:partial => "contacts/contact_listing") ) %>");
-  $("#contactForm").toggle(1000);
+  $("#contactForm").toggle(0);
+  window.location = "<%= root_path %>";
+
 
 <% end -%>

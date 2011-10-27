@@ -17,11 +17,9 @@
   /*Show the flash_notice div*/
   $("#flash_notice").show(300);
 
-  /*Clear the entire form*/
-  $(":input:not(input[type=submit])").val("");
 
+  alert("Contact Information is updated!");
+  /*Clear the entire form*/
   /*Replace the html of the div post_lists with the updated new one*/
-  alert("Contact Modified Succesfully!!");
-  $("#contactListing").html("<%= escape_javascript( render(:partial => "contacts/contact_listing") ) %>");
-  $("#contactEdit").toggle(1000);
+  window.location = "<%= root_path %>";
 <% end -%>

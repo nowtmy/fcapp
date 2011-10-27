@@ -1,7 +1,7 @@
 <div class="body">
   <div class="row contact-logo">
     <div class="span2">
-      <div class="image"><img src="images/clogo.png"/></div>
+      <div class="image"><img src="/images/clogo.png"/></div>
     </div>
   </div>
   <div class="row list-row">
@@ -14,7 +14,7 @@
   </div>
   <div class="row t-lec-image">
     <div class="span3 t-lec-image-desc">
-      <div class="t-lec-image-row"><img src="images/T-Lec-clip.png"/></div>
+      <div class="t-lec-image-row"><img src="/images/T-Lec-clip.png"/></div>
     </div>
   </div>
   <div class="clear3"></div>
@@ -27,7 +27,7 @@
     <div class="clear"></div>
     <div class="row">
       <div class="span16 bar-row">
-        <p class="new-contact-p" onclick="$('#contactForm').toggle(1000); return false">Add A New Contact</p>
+        <p class="new-contact-p" onclick="$('#contactForm').toggle(10); return false">Add A New Contact</p>
       </div>
       <div id="contactForm" style="display: none; margin: 0 20px;">
         <%= render 'form' %>
@@ -40,8 +40,8 @@
 </div>
 <script type="text/javascript">
   function expandContact(contact){
-      $("#contactShow").show();
-      $("#contact-desc-show_"+contact).toggle(1000);
+      $("#contact-desc-show_"+contact).toggle(10);
+      $("#contact-desc-edit_"+contact).slideDown(1);
   }
 </script>
 

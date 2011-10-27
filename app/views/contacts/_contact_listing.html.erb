@@ -12,16 +12,19 @@
           </div>
           <div class="clear-half"></div>
           <div id="contactShow"><div id="contact-desc-show_<%= contact.id %>" style="display:none;"><%= render :partial => 'contacts/contacts', :locals => {:contact => contact} %></div></div>
-          <div id="contactEdit"><div id="contact-edit-show_<%= contact.id %>" style="display:none;"><%= render :partial => 'contacts/edit', :locals => {:contact => contact} %></div></div>
+          <div id="contactEdit" style="margin-top: -50px;"><div id="contact-edit-show_<%= contact.id %>" style="display:none;"><%= render :partial => 'contacts/edit', :locals => {:contact => contact, :message => 'Update Contact Information'} %></div></div>
         </div>
     <% end %>
 
 <script type="text/javascript">
   function show_profile(id){
       {
-          $('#contact-edit-show_'+id).slideToggle();
-          $('#contact-desc-show_'+id).slideDown();
+          $('#contact-desc-show_'+id).slideDown(10);
+          $('#contact-edit-show_'+id).toggle(1);
+
+
       }
 
   }
+
 </script>
