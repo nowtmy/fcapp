@@ -76,7 +76,7 @@
 }
 
 .padding-left-15 {
-    padding-left: 10px;
+    padding-left: 1px;
     color: #333333;
     font-size: 12px;
     font-weight: bold;
@@ -143,3 +143,11 @@
     margin-top: -1.5px -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
 }
+.adjust_form_right_label{
+    margin-top: 1px;
+}
+
+.addContactButton{
+    width: 861px;
+}
+
