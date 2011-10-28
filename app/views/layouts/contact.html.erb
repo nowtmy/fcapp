@@ -12,9 +12,12 @@
     <div class="common-wrapper">
       <div class="row">
         <div class="span4"><%= image_tag 'logo_topbar.png' %><%= image_tag 'certs_topbar_icon.png' %><%= image_tag 'contact_topbar_icon.png' %></div>
-        <div class="span5 top-bar-search" style="width: 235px"><input type="text" class="search-field"><span><%= image_tag 'search_glow_icon.png',:width=> 18,:class => 'search_icon' %></span></div>
+        <div class="span5 top-bar-search" style="width: 235px; margin-left:-10px;">
+          <input type="text" value="Search" class="search-field"><span><%= image_tag 'search_glow_icon.png', :width=> 18, :class => 'search_icon' %></span>
+        </div>
         <div class="span3 new-contact-link"><%= link_to 'Add A New Contact', "#", :id=> 'addContactLink' %></div>
-        <div class="span3 right-panel"><span class="help">Help</span>|<span class="user"><%= current_user.username %></span></div>
+        <div class="span3 right-panel">
+          <span class="help">Help</span>|<span class="user"><%= current_user.username %></span></div>
       </div>
     </div>
   </div>
@@ -26,8 +29,28 @@
 </body>
 </html>
 <script type="text/javascript">
- $("#addContactLink").click(function(){
-    $('#contactForm').toggle(10);
- });
+    $("#addContactLink").click(function() {
+        $('#contactForm').toggle(10);
+    });
+
+
+    $("input.search-field").click(function() {
+        var text = $(this).val();
+        if  (text == 'Search' )
+        $(this).val('');
+        else
+        $(this).val(text);
+    });
+
+    $("input.search-field").blur(function() {
+        var text = $(this).val();
+        if (text == '' ) {
+            $(this).val('Search');
+        }
+        else {
+            $(this).val(text);
+        }
+
+    });
 
 </script>

@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/contacts/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="62" selection-start="138" selection-end="138" vertical-scroll-proportion="0.08196721">
+            <state line="5" column="20" selection-start="171" selection-end="171" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
@@ -68,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="contact.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/contact.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="77" selection-start="919" selection-end="919" vertical-scroll-proportion="-11.25">
+            <state line="37" column="31" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.56284153">
               <folding />
             </state>
           </provider>
@@ -140,9 +140,9 @@
         <option value="$PROJECT_DIR$/app/views/contacts/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/contacts/_contact_listing.html.erb" />
         <option value="$PROJECT_DIR$/app/views/contacts/_contacts.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/contact.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/contact.css" />
         <option value="$PROJECT_DIR$/app/views/contacts/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/contact.html.erb" />
       </list>
     </option>
   </component>
@@ -848,16 +848,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/contact.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/contacts/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="77" selection-start="919" selection-end="919" vertical-scroll-proportion="-11.25">
+        <state line="5" column="20" selection-start="171" selection-end="171" vertical-scroll-proportion="-3.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/contacts/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/contact.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="62" selection-start="138" selection-end="138" vertical-scroll-proportion="0.08196721">
+        <state line="37" column="31" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.56284153">
           <folding />
         </state>
       </provider>
