@@ -152,3 +152,8 @@
     width: 861px;
 }
 
+a#addContactLink:hover{
+    color: #ffffff;
+    text-decoration: none;
+
+}

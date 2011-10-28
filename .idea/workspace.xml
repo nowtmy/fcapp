@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="contact.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/contact.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="0" selection-start="2052" selection-end="2052" vertical-scroll-proportion="-16.333334">
+            <state line="154" column="2" selection-start="2055" selection-end="2055" vertical-scroll-proportion="0.83516484">
               <folding />
             </state>
           </provider>
@@ -68,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="contact.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/contact.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="115" selection-start="418" selection-end="418" vertical-scroll-proportion="0.36380598">
+            <state line="17" column="130" selection-start="1056" selection-end="1070" vertical-scroll-proportion="-10.625">
               <folding />
             </state>
           </provider>
@@ -141,8 +141,8 @@
         <option value="$PROJECT_DIR$/app/views/contacts/_contact_listing.html.erb" />
         <option value="$PROJECT_DIR$/app/views/contacts/_contacts.html.erb" />
         <option value="$PROJECT_DIR$/app/views/contacts/new.html.erb" />
-        <option value="$PROJECT_DIR$/public/stylesheets/contact.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/contact.html.erb" />
+        <option value="$PROJECT_DIR$/public/stylesheets/contact.css" />
       </list>
     </option>
   </component>
@@ -841,13 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/contact.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="0" selection-start="2052" selection-end="2052" vertical-scroll-proportion="-16.333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/contacts/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="20" selection-start="171" selection-end="171" vertical-scroll-proportion="-3.125">
@@ -857,7 +850,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/contact.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="115" selection-start="418" selection-end="418" vertical-scroll-proportion="0.36380598">
+        <state line="17" column="130" selection-start="1056" selection-end="1070" vertical-scroll-proportion="-10.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/contact.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="2" selection-start="2055" selection-end="2055" vertical-scroll-proportion="0.83516484">
           <folding />
         </state>
       </provider>
