@@ -11,7 +11,7 @@
   <div class="topbar-inner">
     <div class="common-wrapper">
       <div class="row">
-        <div class="span4"><%= image_tag 'logo_topbar.png' %><%= link_to (image_tag 'contact_topbar_icon.png', :class => 'contactHover'), '#' %><%= link_to (image_tag 'certs_topbar_icon.png', :class => 'certHover'), '#' %></div>
+        <div class="span4"><%= image_tag 'logo_topbar.png' %><span class="contactTopSpan" style="margin-right: 9px;"><%= link_to (image_tag 'contact_topbar_icon.png', :class => 'contactHover'), '#', :alt=> 'icon contact' %></span><%= link_to (image_tag 'certs_topbar_icon.png', :class => 'certHover'), '#', :alt => 'icon Certificates and Reports' %></div>
         <div class="span5 top-bar-search" style="width: 235px; margin-left:12px;">
           <input type="text" value="Search..." class="search-field" style="color:  #e6e6e6"><span><%= image_tag 'search_glow_icon.png', :width=> 18, :class => 'search_icon' %></span>
         </div>
