@@ -11,7 +11,7 @@
   <div class="topbar-inner">
     <div class="common-wrapper">
       <div class="row">
-        <div class="span4"><%= image_tag 'logo_topbar.png' %><%= image_tag 'certs_topbar_icon.png' %><%= image_tag 'contact_topbar_icon.png' %></div>
+        <div class="span4"><%= image_tag 'logo_topbar.png' %><%= link_to (image_tag 'contact_topbar_icon.png', :class => 'contactHover'), '#' %><%= link_to (image_tag 'certs_topbar_icon.png', :class => 'certHover'), '#' %></div>
         <div class="span5 top-bar-search" style="width: 235px; margin-left:12px;">
           <input type="text" value="Search..." class="search-field" style="color:  #e6e6e6"><span><%= image_tag 'search_glow_icon.png', :width=> 18, :class => 'search_icon' %></span>
         </div>
@@ -35,23 +35,45 @@
 
 
     $("input.search-field").click(function() {
-        $(this).css('color','#000')
+        $(this).css('color', '#000')
         var text = $(this).val();
-        if  (text == 'Search...' )
-        $(this).val('');
+        if (text == 'Search...')
+            $(this).val('');
         else
-        $(this).val(text);
+            $(this).val(text);
     });
 
     $("input.search-field").blur(function() {
         var text = $(this).val();
-        if (text == '' ) {
+        if (text == '') {
             $(this).val('Search...');
         }
         else {
             $(this).val(text);
         }
-
     });
+
+    $('img.contactHover').mouseover(function() {
+        //$(this).attr('img.check').src('contact_topbar_icon.png').remove();
+        var newSrc = $(this).attr("src").replace("contact_topbar_icon.png", "contact_topbar_icon_hover.png");
+        $(this).attr("src", newSrc);
+    });
+
+    $('img.contactHover').mouseout(function() {
+        var newSrc = $(this).attr("src").replace("contact_topbar_icon_hover.png", "contact_topbar_icon.png");
+        $(this).attr("src", newSrc);
+    });
+
+    $('img.certHover').mouseover(function() {
+        //$(this).attr('img.check').src('contact_topbar_icon.png').remove();
+        var newSrc = $(this).attr("src").replace("certs_topbar_icon.png", "certs_topbar_icon_hover.png");
+        $(this).attr("src", newSrc);
+    });
+
+    $('img.certHover').mouseout(function() {
+        var newSrc = $(this).attr("src").replace("certs_topbar_icon_hover.png", "certs_topbar_icon.png");
+        $(this).attr("src", newSrc);
+    });
+
 
 </script>
