@@ -71,7 +71,7 @@
       <file leaf-file-name="contact.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/contact.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="113" selection-start="416" selection-end="416" vertical-scroll-proportion="0.39795917">
+            <state line="42" column="25" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.47959185">
               <folding />
             </state>
           </provider>
@@ -98,7 +98,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/contacts/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="18" selection-start="3555" selection-end="3571" vertical-scroll-proportion="0.0">
+            <state line="77" column="18" selection-start="3555" selection-end="3571" vertical-scroll-proportion="-15.333333">
               <folding />
             </state>
           </provider>
@@ -839,21 +839,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/contacts/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="18" selection-start="3555" selection-end="3571" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/clear.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="19" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/contacts/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="18" selection-start="3555" selection-end="3571" vertical-scroll-proportion="-15.333333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/contact.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="113" selection-start="416" selection-end="416" vertical-scroll-proportion="0.39795917">
+        <state line="42" column="25" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.47959185">
           <folding />
         </state>
       </provider>
