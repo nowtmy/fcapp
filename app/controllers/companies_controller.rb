@@ -1,6 +1,7 @@
 class CompaniesController < ApplicationController
   # GET /companies
   # GET /companies.xml
+   before_filter :require_user
   def index
     @companies = Company.all
 
