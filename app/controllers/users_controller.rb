@@ -69,7 +69,6 @@ class UsersController < ApplicationController
         format.xml { head :ok }
       else
         redirect_to settings_path
-        format.xml { render :xml => @user.errors, :status => :unprocessable_entity }
       end
     end
   end
