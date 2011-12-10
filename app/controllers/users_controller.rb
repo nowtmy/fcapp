@@ -68,7 +68,7 @@ class UsersController < ApplicationController
         format.html { redirect_to(settings_path, :notice => 'User was successfully updated.') }
         format.xml { head :ok }
       else
-        format.html { render :action => "edit" }
+        redirect_to settings_path
         format.xml { render :xml => @user.errors, :status => :unprocessable_entity }
       end
     end
