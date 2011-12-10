@@ -53,7 +53,7 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/contacts/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="17" selection-start="451" selection-end="451" vertical-scroll-proportion="0.34210527">
+            <state line="9" column="25" selection-start="293" selection-end="293" vertical-scroll-proportion="0.23684211">
               <folding />
             </state>
           </provider>
@@ -902,7 +902,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/contacts/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="451" selection-end="451" vertical-scroll-proportion="0.34210527">
+        <state line="9" column="25" selection-start="293" selection-end="293" vertical-scroll-proportion="0.23684211">
           <folding />
         </state>
       </provider>
