@@ -7,7 +7,11 @@
 
   <div class="row t-lec-image" style="float: right;">
     <div class="span3 t-lec-image-desc">
-      <div class="t-lec-image-row"><img src="/images/T-Lec-clip.png"/></div>
+       <% if @user.profile.nil? %>
+        <img src="/images/T-Lec-clip-no-image-default.png"/>
+        <% else %>
+        <%= image_tag @user.profile.url(:small) %>
+        <% end %>
     </div>
   </div>
   <div class="clear3"></div>
