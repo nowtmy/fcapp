@@ -1,0 +1,77 @@
+<div class="body">
+  <div class="row contact-logo">
+    <div class="span2">
+      <div class="image"><img src="/images/contacts_LARGE_ICON.png"/></div>
+    </div>
+    <div class="span2 image-setting-text"><h2>Settings</h2></div>
+  </div>
+
+  <div class="row t-lec-image" style="float: right;">
+    <div class="span3 t-lec-image-desc">
+      <div class="t-lec-image-row">
+        <% if @user.profile.nil? %>
+        <img src="/images/T-Lec-clip-no-image-default.png"/>
+        <% else %>
+        <%= image_tag @user.profile.url(:small) %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="clear3"></div>
+  <h5 style="padding-left: 30px">Company</h5>
+
+  <div class="companyListing">
+    <%= render :partial => 'settings/shared/company_form' %>
+  </div>
+  <div class="clear3"></div>
+  <h5 style="padding-left: 30px">Accreditation</h5>
+
+  <div class="contactListing">
+    <%= render :partial => 'settings/shared/accreditation_form' %>
+  </div>
+  <div class="clear3"></div>
+  <div class="companyProfile">
+    <div class="setting-module-wrapper">
+      <div class="left-side-form span2" style="margin-left: 45px; margin-top: -10px;">
+        <label for="fileInput" class="label" style="float: right;">File input</label>
+      </div>
+      <div class="right-side-form span5">
+        <div class="input" style="margin-top: -15px;">
+          <%= form_for(@user, :html => { :multipart => true }) do |f| %>
+              <%= f.file_field :profile %>
+              </div>
+              </div>
+              <%= f.submit 'Update', :disable_with => 'Updating...', :class => 'btn update_button' %>
+          <% end %>
+          </div>
+
+  </div>
+  <div class="clear"></div>
+  <h5 style="padding-left: 30px">User</h5>
+
+  <div class="row">
+    <div class="span4 padding-left-40"><span style="padding-left: 10px;">Name</span></div>
+    <div class="span4 padding-left-40">Position</div>
+    <div class="span4 padding-left-40">Account Access and Permission</div>
+  </div>
+  <div class="row">
+    <div class="bar-row" onclick="$('#contactForm').toggle(10); return false">
+      <p class="new-contact-p">Add A New User</p>
+    </div>
+    <div id="contactForm" style="display:none;margin: 0 0 0 10px">
+      <%= render :partial => 'settings/shared/user_form' %>
+    </div>
+  </div>
+  <div class="contact-wrapper">
+    <div class="clear-half"></div>
+    <%= render :partial => 'settings/shared/fellowers' %>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="clear2"></div>
+<script type="text/javascript">
+    function expandContact(contact) {
+        $("#contact-desc-show_" + contact).toggle(10);
+        $("#contact-desc-edit_" + contact).slideDown(1);
+    }
+</script>

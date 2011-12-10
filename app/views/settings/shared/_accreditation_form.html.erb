@@ -1,0 +1,83 @@
+<div class="setting-module-wrapper">
+<%= form_for(@accreditation ||= Accreditation.new) do |f| %>
+      <% if !@accreditation.nil? %>
+      <% if @accreditation.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@accreditation.errors.count, "error") %> prohibited this company from being saved:</h2>
+
+          <ul>
+            <% @accreditation.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+    <% end %>
+      <%= f.hidden_field :user_id, :value => current_user.id %>
+    <div class="left-side span5">
+      <label for="accreditation_niceic_approved_contractor"><p class="label">niceic approved contractor</p>
+      </label>
+
+      <div class="clear2"></div>
+      <label for="accreditation_niceic_approved_contractor"><p class="label">niceic_domestic_installer</p></label>
+
+      <div class="clear2"></div>
+      <label for="accreditation_niceic_approved_contractor">
+        <p class="label span4">electrical contractors association</p></label>
+
+      <div class="clear2"></div>
+      <label for="accreditation_niceic_approved_contractor"><p class="label">napit</p></label>
+
+      <div class="clear2"></div>
+      <label for="accreditation_niceic_approved_contractor"><p class="label">elecsa</p></label>
+    </div>
+    <div class="right-side">
+      <div class="clearfix">
+        <div class="input">
+          <div class="input-prepend">
+            <label class="add-on"><input type="checkbox" <%= !@accreditation.niceic_approved_contractor?? "" :"checked" %>></label>
+            <%= f.text_field :niceic_approved_contractor, :class => 'xwidth xheight' %>
+          </div>
+        </div>
+      </div>
+      <div class="clear-half"></div>
+      <div class="clearfix">
+        <div class="input">
+          <div class="input-prepend">
+            <label class="add-on"><input type="checkbox" <%= !@accreditation.niceic_domestic_installer? ? "" :"checked"%>></label>
+            <%= f.text_field :niceic_domestic_installer, :class => 'xwidth xheight' %>
+          </div>
+        </div>
+      </div>
+      <div class="clear-half"></div>
+      <div class="clearfix">
+        <div class="input">
+          <div class="input-prepend">
+            <label class="add-on"><input type="checkbox" <%= !@accreditation.electrical_contractors_association?? "": "checked" %> ></label>
+            <%= f.text_field :electrical_contractors_association, :class => 'xwidth xheight' %>
+          </div>
+        </div>
+      </div>
+      <div class="clear-half"></div>
+      <div class="clearfix">
+        <div class="input">
+          <div class="input-prepend">
+            <label class="add-on"><input type="checkbox"  <%= !@accreditation.elecsa?? "":"checked" %>></label>
+            <%= f.text_field :elecsa, :class => 'xwidth xheight' %>
+          </div>
+        </div>
+      </div>
+      <div class="clear-half"></div>
+      <div class="clearfix">
+        <div class="input">
+          <div class="input-prepend">
+            <label class="add-on"><input type="checkbox" <%= !@accreditation.napit?? "" :'checked' %>></label>
+            <%= f.text_field :napit, :class => 'xwidth  xheight' %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <%= f.submit 'Submit', :disable_with => 'updating..',:class=> 'btn'%>
+<% end %>
+</div>

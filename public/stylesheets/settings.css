@@ -1,0 +1,300 @@
+.common-wrapper {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.body {
+    padding: 5px;
+    background: url('/images/contact-bg.png') repeat;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    height: auto;
+}
+
+.contact-wrapper {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.contact-logo {
+    float: left;
+    margin: 10px 10px 10px 0px;
+}
+
+.list-row {
+    float: left;
+    margin: 15px
+}
+
+.span-right-60 {
+    margin-right: 60px
+}
+
+.t-lec-image {
+    float: left;
+    margin: 10px
+}
+
+.t-lec-image-desc {
+    float: left;
+}
+
+.t-lec-image-row {
+    float: right;
+}
+
+.padding-left-20 {
+    padding-left: 20px;
+}
+
+.bar-row {
+    height: 30px;
+    width: 951px;
+    margin-left: 22px;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.new-contact-p {
+    padding: 5px;
+    margin: 3px 20px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.contact-row-bar {
+
+}
+
+.contact-row-bar-wrapper {
+    background: url("/images/bar.png") repeat;
+
+}
+
+.new-contact-bar-p {
+    margin: 3px 20px;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.padding-left-15 {
+    padding-left: 1px;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 6px;
+}
+
+.span-float-right {
+    width: 10px;
+    text-align: right;
+    float: right;
+    padding-top: -10px;
+    margin-right:0px;
+}
+
+.mini-menu {
+    float: right;
+    margin-right: 15px;
+}
+
+.top-bar-search {
+    margin-top: 10px;
+}
+
+.search-field {
+    height: 29px;
+    margin-top: -5px;
+}
+
+.new-contact-link {
+    margin: 10px;
+    color: #cdcdcd;
+}
+
+.right-panel {
+    margin: 10px;
+    float: right;
+    text-align: right;
+}
+
+.help {
+    padding-right: 10px;
+    color: #cdcdcd;
+}
+
+.user {
+    padding-left: 10px;
+    color: #cdcdcd;
+}
+
+.label-space {
+    height: 20px;
+    margin: 3px;
+}
+
+.white_content {
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    padding: 16px;
+    z-index: 1002;
+    overflow: auto;
+}
+
+.adjust_form_right_label{
+    margin-top: 1px;
+}
+
+.addContactButton{
+    width: 861px;
+}
+
+a#addContactLink:hover{
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.company_details{
+    margin: 10px;
+
+}
+
+.adjust-label{
+    margin-top: 10px;
+    margin-right:30px;
+}
+
+.company_form{
+    width: 600px;
+    margin: 10 auto;
+}
+
+.settings_title{
+    color: #4a4a4a;
+    margin: 12px;
+    font-size: 25px;
+}
+
+.setting_module_title{
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: bold;;
+
+}
+.left-side{
+    margin-right: -70px;
+    width: 300px;
+    float: left;
+}
+.left-side p{
+    text-align: right;
+    float: right;
+}
+.right-side{
+    margin-left: -70px;
+    width: 500px;
+    float: left;
+    text-align: left;
+}
+
+input.xheight{
+    height: 28px;
+}
+input.xwidth{
+    width: 200px;
+}
+
+.setting-module-wrapper{
+    height: auto;
+    background-color: #d5d5d5;
+    margin: 10px;
+    padding: 20px 40px;
+}
+
+.right-side-form{
+    float: left;
+    text-align: left;
+}
+.left-side-form{
+    float: left;
+    text-align: right;
+}
+
+.left-side-form p{
+    text-align: right;
+    float: right;
+}
+
+.clear-company-field{
+    clear: both;
+    height: 20.5px;
+}
+
+.role-box{
+    margin-left: 100px;
+    height: 400px;
+    padding: 20px
+}
+
+.company-list{
+    width: auto;
+    height: 21.8px;
+    line-height: 20px;
+    padding-top: 9.5px;
+}
+
+.company-edit-box{
+    height: auto;
+    width: auto;
+    display: none;
+}
+
+.access-permission{
+    line-height: 18px;
+    height: 18px;
+}
+
+.accessability{
+    margin-left: 0px;
+}
+
+.fellow-list{
+    font-size: 12px;
+    padding: 5px;
+    height: 35px;
+    margin-left: -2px;
+    margin-top: 5px;
+    background-color: #c3c3c3;
+    cursor: pointer;
+}
+
+.margin-patch{
+    margin-left: -2px;
+    margin-top: -7px;
+    width: 869px;
+}
+
+.padding-left-40{
+    padding-left: 40px;
+}
+
+.margin-patch-for-user{
+    margin-left: 11px;
+    margin-right: 7px;
+    margin-top: 0;
+}
+
+.image-setting-text{
+    line-height: 10px;
+    padding: 10px 0;
+}
+
+.update_button{
+    margin-left: 10px;
+    margin-top: -16px;
+}

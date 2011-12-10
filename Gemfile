@@ -9,6 +9,13 @@ gem 'jquery-rails'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2', '< 0.3'
+gem 'formtastic'
+gem 'haml'
+gem 'cancan'
+gem 'paperclip'
+gem 'rspec'
+gem 'rspec-rails'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'

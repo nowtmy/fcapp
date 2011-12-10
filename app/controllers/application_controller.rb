@@ -1,7 +1,16 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  helper_method :current_user_session, :current_user
+  helper_method :current_user_session, :current_user, :load_common_variables
+
+  def load_common_variables
+    @company = Company.find_by_user_id(current_user.id)
+    @user = User.find(current_user.id)
+    @fellower = User.new
+    @fellowers = current_user.fellowers.all
+    @accreditation = Accreditation.find_by_user_id(current_user.id)
+    @accreditations = Accreditation.all
+  end
 
   private
     def current_user_session

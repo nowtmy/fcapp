@@ -1,0 +1,73 @@
+<p class="setting_module_title">Company Details</p>
+<div class="company_form">
+<p id="notice"><%= notice %></p>
+<%= form_for(@company) do |f| %>
+    <% if @company.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@company.errors.count, "error") %> prohibited this company from being saved:</h2>
+
+          <ul>
+            <% @company.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <%= f.hidden_field :userid, :value => current_user.id %>
+    <div class="field">
+      <%= f.label :name, :class => 'label label-space adjust-label'  %>
+      <br/>
+      <%= f.text_field :name, :class => 'search-field xlarge' %>
+    </div>
+    <div class="field">
+      <%= f.label :office_telephone, :class => 'label label-space adjust-label'  %>
+      <br/>
+      <%= f.text_field :office_telephone, :class => 'search-field xlarge' %>
+    </div>
+    <div class="field">
+      <%= f.label :office_email_address, :class => 'label label-space adjust-label xlarge'  %>
+      <br/>
+      <%= f.text_field :office_email_address, :class => 'search-field xlarge' %>
+    </div>
+    <div class="field">
+      <%= f.label :website, :class => 'label label-space adjust-label'  %>
+      <br/>
+      <%= f.text_field :website, :class => 'search-field xlarge' %>
+    </div>
+    <div class="field">
+      <%= f.label :address_line_1, :class => 'label label-space adjust-label'  %>
+      <br/>
+      <%= f.text_field :address_line_1, :class => 'search-field xlarge' %>
+    </div>
+    <div class="field">
+      <%= f.label :address_line_2, :class => 'label label-space adjust-label'  %>
+      <br/>
+      <%= f.text_field :address_line_2, :class => 'search-field xlarge' %>
+    </div>
+    <div class="field">
+      <%= f.label :address_line_3, :class => 'label label-space adjust-label'  %>
+      <br/>
+      <%= f.text_field :address_line_3, :class => 'search-field xlarge' %>
+    </div>
+    <div class="field">
+      <%= f.label :city, :class => 'label label-space adjust-label'  %>
+      <br/>
+      <%= f.text_field :city, :class => 'search-field xlarge' %>
+    </div>
+    <div class="field">
+      <%= f.label :country, :class => 'label label-space adjust-label'  %>
+      <br/>
+      <%= f.text_field :country, :class => 'search-field xlarge' %>
+    </div>
+    <div class="field">
+      <%= f.label :postcode, :class => 'label label-space adjust-label' %>
+      <br/>
+      <%= f.text_field :postcode, :class => 'search-field xlarge' %>
+    </div>
+      <div class="clear2"></div>
+      <div class="span5" style="text-align: center;"><%= f.submit :class => 'btn' %></div>
+      <div class="clear2"></div>
+<% end %>
+</div>
+

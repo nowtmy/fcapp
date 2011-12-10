@@ -1,0 +1,58 @@
+<div class="setting-module-wrapper margin-patch">
+  <%= form_for(fellower) do |f| %>
+      <%= f.hidden_field :parent_id, :value => current_user.id %>
+      <%= f.hidden_field :fellow_flag, :value => 1 %>
+      <div class="left-side-form span3">
+        <label for="first_name"></label><span><p class="label">Last Name</p></span>
+
+        <div class="clear2"></div>
+        <label for="last_name"></label><span><p class="label">First Name</p></span>
+
+        <div class="clear2"></div>
+        <label for="email"></label><span><p class="label">Email</p></span>
+
+        <div class="clear2"></div>
+        <label for="permission"></label><span><p class="label">Permission</p></span>
+
+        <div class="clear2"></div>
+        <label for="password"></label><span><p class="label">Password</p></span>
+
+        <div class="clear2"></div>
+        <label for="password_confirmation"></label><span><p class="label">Confirm Password</p></span>
+      </div>
+      <div class="right-side-form span4">
+        <%= f.text_field :first_name, :class => 'xheight xlarge mini' %>
+        <div class="clear3"></div>
+        <%= f.text_field :last_name, :class => 'xheight xlarge mini' %>
+        <div class="clear3"></div>
+        <%= f.text_field :email, :class => 'xheight xlarge mini' %>
+        <div class="clear3"></div>
+        <%= f.select :permission, [['Electrician', 'Electrician'], ['Account Master', 'Account Master'], ['Qualified Supervisor','Qualified Supervisor']], :class => 'xheight xlarge mini' %>
+        <div class="clear3"></div>
+        <%= f.password_field :password, :class => 'xheight xlarge mini' %>
+        <div class="clear3"></div>
+        <%= f.password_field :password_confirmation, :class => 'xheight xlarge mini' %>
+        <div class="clear-company-field"></div>
+      </div>
+      <div class="span5 role-box" style="margin-top: -20px">
+        <h2 style="color: #595959;">Access and Permission</h2>
+        <div class="clear2"></div>
+        <div class="access-permission">
+          <div class="accessability span"><%= f.check_box :create_certificates_and_reports  %></div>
+          <p>&nbsp; CREATE CERTIFICATES & REPORTS</p>
+        </div>
+        <div class="clear2"></div>
+        <div class="access-permission">
+          <div class="accessability span"><%= f.check_box :signoff_certificates_and_reports %></div>
+          <p>&nbsp; SIGN OFF CERTIFICATES & REPORTS</p>
+        </div>
+        <div class="clear2"></div>
+        <div class="access-permission">
+          <div class="accessability span"><%= f.check_box :access_account_settings %></div>
+          <p>&nbsp; ACCESS ACCOUNT SETTINGS</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <%= f.submit 'Update',:disable_with => 'Updating..', :class => 'btn' %>
+  <% end %>
+ </div>

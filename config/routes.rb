@@ -1,7 +1,18 @@
 Web::Application.routes.draw do
+
+
+
+  resources :settings, :only => [:index]
+
+  resources :roles
+  resources :accreditations
+
   get "ajax/create_user"
+  get "users/settings"
 
   resources :contacts
+  resources :companies
+  resources :settings, :only => [:index]
 
   get "welcome/index"
 
@@ -10,10 +21,15 @@ Web::Application.routes.draw do
   match '/login' => "user_sessions#new", :as => :login
   match '/logout' => "user_sessions#destroy", :as => :logout
   match '/signup' => "users#new", :as => :signup
- # match '/client.flycert.com:3000/signup' => "ajax/create_user"
+  # match '/client.flycert.com:3000/signup' => "ajax/create_user"
 
 
-  resources :users
+  resources :users do
+    member do
+      post 'fellowers'
+      post 'edit_fellowers'
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -64,7 +80,7 @@ Web::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => "contacts#new", :as => :root
+  root :to => "contacts#new", :as => :root
 
   # See how all your routes lay out with "rake routes"
 

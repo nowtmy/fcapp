@@ -1,0 +1,153 @@
+<div class="setting-module-wrapper">
+   <span class="span-float-right"><a href="#" onclick="$('.company-edit-box').toggle();$('.company-list-show').toggle();"><img src="/images/edit.png" alt="edit"></a></span>
+   <div class="clear"></div>
+  <div class="company-list-show">
+  <div class="left-side-form span5">
+    <label for="name"></label><span><p class="label">Company Name/ Trading Name</p></span>
+
+    <div class="clear"></div>
+    <label for="office_telephone"></label><span><p class="label">Office Telephone</p></span>
+
+    <div class="clear"></div>
+    <label for="office_email_address"></label><span><p class="label">Office Email Address</p></span>
+
+    <div class="clear"></div>
+    <label for="website"></label><span><p class="label">Website</p></span>
+
+    <div class="clear"></div>
+    <label for="address_line_1"></label><span><p class="label">Address Line 1</p></span>
+
+    <div class="clear"></div>
+    <label for="address_line_2"></label><span><p class="label">Address Line 2</p></span>
+
+    <div class="clear"></div>
+    <label for="address_line_3"></label><span><p class="label">Address Line 3</p></span>
+
+    <div class="clear"></div>
+    <label for="city"></label><span><p class="label">City</p></span>
+
+    <div class="clear"></div>
+    <label for="country"></label><span><p class="label">Country</p></span>
+
+    <div class="clear"></div>
+    <label for="Post"></label><span><p class="label">Post</p></span>
+  </div>
+    <% if !@company.nil? %>
+  <div class="right-side-form span5">
+    <div class="company-list">
+      <%= @company.name %>
+    </div>
+    <div class="clear"></div>
+    <div class="company-list">
+      <%= @company.office_telephone %>
+    </div>
+    <div class="clear"></div>
+    <div class="company-list">
+      <%= @company.office_email_address %>
+    </div>
+    <div class="clear"></div>
+    <div class="company-list">
+      <%= @company.website %>
+    </div>
+    <div class="clear"></div>
+    <div class="company-list">
+      <%= @company.address_line_1 %>
+    </div>
+    <div class="clear"></div>
+    <div class="company-list">
+      <%= @company.address_line_2 %>
+    </div>
+    <div class="clear"></div>
+    <div class="company-list">
+      <%= @company.address_line_3 %>
+    </div>
+    <div class="clear"></div>
+    <div class="company-list">
+      <%= @company.city %>
+    </div>
+    <div class="clear"></div>
+    <div class="company-list">
+      <%= @company.country %>
+    </div>
+    <div class="clear"></div>
+    <div class="company-list">
+      <%= @company.postcode %>
+    </div>
+    <div class="clear"></div>
+  </div>
+ <% end %>
+</div>
+    <div class="clear2"></div>
+  <div class="company-edit-box">
+    <%= form_for(@company ||= Company.new) do |f| %>
+        <% if !@company.nil? %>
+        <% if @company.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@company.errors.count, "error") %> prohibited this company from being saved:</h2>
+
+              <ul>
+                <% @company.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+              </ul>
+            </div>
+           <% end %>
+        <% end %>
+        <%= f.hidden_field :user_id, :value => current_user.id %>
+        <div class="left-side-form span5">
+          <label for="name"></label><span><p class="label">Company Name/ Trading Name</p></span>
+
+          <div class="clear2"></div>
+          <label for="office_telephone"></label><span><p class="label">Office Telephone</p></span>
+
+          <div class="clear2"></div>
+          <label for="office_email_address"></label><span><p class="label">Office Email Address</p></span>
+
+          <div class="clear2"></div>
+          <label for="website"></label><span><p class="label">Website</p></span>
+
+          <div class="clear2"></div>
+          <label for="address_line_1"></label><span><p class="label">Address Line 1</p></span>
+
+          <div class="clear2"></div>
+          <label for="address_line_2"></label><span><p class="label">Address Line 2</p></span>
+
+          <div class="clear2"></div>
+          <label for="address_line_3"></label><span><p class="label">Address Line 3</p></span>
+
+          <div class="clear2"></div>
+          <label for="city"></label><span><p class="label">City</p></span>
+
+          <div class="clear2"></div>
+          <label for="country"></label><span><p class="label">Country</p></span>
+
+          <div class="clear2"></div>
+          <label for="Post"></label><span><p class="label">Post</p></span>
+        </div>
+        <div class="right-side-form span5">
+          <%= f.text_field :name, :class => 'xheight xlarge xwidth mini' %>
+          <div class="clear-company-field"></div>
+          <%= f.text_field :office_telephone, :class => 'xheight xwidth xlarge mini' %>
+          <div class="clear-company-field"></div>
+          <%= f.text_field :office_email_address, :class => 'xheight xwidth xlarge mini' %>
+          <div class="clear-company-field"></div>
+          <%= f.text_field :website, :class => 'xheight xwidth xlarge mini' %>
+          <div class="clear-company-field"></div>
+          <%= f.text_field :address_line_1, :class => 'xheight xwidth xlarge mini' %>
+          <div class="clear-company-field"></div>
+          <%= f.text_field :address_line_2, :class => 'xheight xwidth xlarge mini' %>
+          <div class="clear-company-field"></div>
+          <%= f.text_field :address_line_3, :class => 'xheight xwidth xlarge mini' %>
+          <div class="clear-company-field"></div>
+          <%= f.text_field :city, :class => 'xheight xwidth xlarge mini' %>
+          <div class="clear-company-field"></div>
+          <%= f.text_field :country, :class => 'xheight xwidth xlarge mini' %>
+          <div class="clear-company-field"></div>
+          <%= f.text_field :postcode, :class => 'xheight xwidth xlarge mini' %>
+          <div class="clear1"></div>
+        </div>
+        <div class="clear"></div>
+        <%= f.submit "Update", :disable_with => 'Submitting..', :class => "btn" %>
+    <% end %>
+  </div>
+</div>

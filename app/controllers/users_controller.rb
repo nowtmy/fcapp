@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @users }
+      format.xml { render :xml => @users }
     end
   end
 
@@ -16,10 +16,9 @@ class UsersController < ApplicationController
   # GET /users/1.xml
   def show
     @user = User.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @user }
+      format.xml { render :xml => @user }
     end
   end
 
@@ -30,7 +29,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.xml  { render :xml => @user }
+      format.xml { render :xml => @user }
     end
   end
 
@@ -43,8 +42,9 @@ class UsersController < ApplicationController
   # POST /users.xml
   def create
     @user = User.new(params[:user])
-      if @user.save
-            flash[:notice] = "Successfully created user."
+    if @user.save
+      flash[:notice] = "Successfully created user."
+      redirect_to settings_path
     end
   end
 
@@ -52,14 +52,23 @@ class UsersController < ApplicationController
   # PUT /users/1.xml
   def update
     @user = User.find(params[:id])
-
+    flag = !params[:user][:fellow_flag].nil? ? true :false
+    #raise flag.inspect
     respond_to do |format|
       if @user.update_attributes(params[:user])
-        format.html { redirect_to(@user, :notice => 'User was successfully updated.') }
-        format.xml  { head :ok }
+        if flag
+          @access = Accessability.find_or_create_by_user_id(@user.id)
+          @access.role_1 = params[:user][:create_certificates_and_reports]
+          @access.role_2 = params[:user][:signoff_certificates_and_reports]
+          @access.role_3 = params[:user][:access_account_settings]
+          @access.save
+        end
+
+        format.html { redirect_to(settings_path, :notice => 'User was successfully updated.') }
+        format.xml { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
+        format.xml { render :xml => @user.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -72,12 +81,35 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to(users_url) }
-      format.xml  { head :ok }
+      format.xml { head :ok }
     end
+  end
+
+  def settings
+    @company = Company.new
+    @contact = Contact.last
+    render :layout => 'settings'
+  end
+
+  def fellowers
+    @fellower = User.new(params[:user])
+    @fellower.save
+    set_acccessability_for_user(@fellower)
+  end
+
+  def edit_fellowers
+
   end
 end
 
-private
-  def render_layout_as_default (layout)
 
-  end
+private
+
+def set_acccessability_for_user(user)
+  @user = user
+  @access = Accessability.find_or_create_by_user_id(@user.id)
+  @access.role_1 = user.create_certificates_and_reports
+  @access.role_2 = user.signoff_certificates_and_reports
+  @access.role_3 = user.access_account_settings
+  redirect_to settings_path
+end

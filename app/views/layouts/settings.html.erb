@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Settings</title>
+  <%= stylesheet_link_tag 'bootstrap', 'clear', 'settings' %>
+  <%= javascript_include_tag :all %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="common-wrapper">
+      <div class="row">
+        <div class="span4"><%= image_tag 'logo_topbar.png' %><span class="contactTopSpan" style="margin-right: -4px;margin-left: 8px;"><%= link_to (image_tag 'contact_topbar_icon.png',:alt => 'contact' ,:class => 'contactHover'), '#', :alt=> 'icon contact' %></span><%= link_to (image_tag 'certs_topbar_icon.png', :class => 'certHover', :alt => 'icon Certificates and Reports'), '#' %></div>
+        <div class="span2 new-contact-link" style="margin-right: 5px;"><%= link_to 'Company Details', "#", :id=> 'addContactLink' %></div>
+        <div class="span2 new-contact-link" style="margin-right: -15px;"><%= link_to 'Accreditation', "#", :id=> 'addContactLink' %></div>
+        <div class="span1 new-contact-link" style="margin-right: -5px;"><%= link_to 'Logo', "#", :id=> 'addContactLink' %></div>
+        <div class="span1 new-contact-link" style="margin-right: 0px;"><%= link_to 'Users', "#", :id=> 'addContactLink' %></div>
+        <div class="span2 new-contact-link" style="margin-right: -8px;"><%= link_to 'Billings', "#", :id=> 'addContactLink' %></div>
+        <div class="span3 right-panel">
+          <span class="help">Help</span>|<span class="user"><%= current_user.username %></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clear4"></div>
+<div class="common-wrapper">
+   <%= yield %>
+  <div class="clear5"></div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+
+    $('img.contactHover').mouseover(function() {
+        var newSrc = $(this).attr("src").replace("contact_topbar_icon.png", "contact_topbar_icon_hover.png");
+        $(this).attr("src", newSrc);
+    });
+
+    $('img.contactHover').mouseout(function() {
+        var newSrc = $(this).attr("src").replace("contact_topbar_icon_hover.png", "contact_topbar_icon.png");
+        $(this).attr("src", newSrc);
+    });
+
+    $('img.certHover').mouseover(function() {
+        var newSrc = $(this).attr("src").replace("certs_topbar_icon.png", "certs_topbar_icon_hover.png");
+        $(this).attr("src", newSrc);
+    });
+
+    $('img.certHover').mouseout(function() {
+        var newSrc = $(this).attr("src").replace("certs_topbar_icon_hover.png", "certs_topbar_icon.png");
+        $(this).attr("src", newSrc);
+    });
+
+
+</script>

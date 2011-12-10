@@ -1,0 +1,37 @@
+<%= form_for(@accreditation) do |f| %>
+  <% if @accreditation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@accreditation.errors.count, "error") %> prohibited this company from being saved:</h2>
+
+      <ul>
+      <% @company.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :niceic_approved_contractor %><br />
+    <%= f.text_field :niceic_approved_contractor %>
+  </div>
+  <div class="field">
+    <%= f.label :niceic_domestic_installer %><br />
+    <%= f.text_field :niceic_domestic_installer %>
+  </div>
+  <div class="field">
+    <%= f.label :electrical_contractors_association %><br />
+    <%= f.text_field :electrical_contractors_association %>
+  </div>
+  <div class="field">
+    <%= f.label :napit %><br />
+    <%= f.text_field :napit %>
+  </div>
+  <div class="field">
+    <%= f.label :elecsa %><br />
+    <%= f.text_field :elecsa %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
