@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   # GET /users
   # GET /users.xml
   layout 'signup'
@@ -78,11 +79,7 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     @user.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(users_url) }
-      format.xml { head :ok }
-    end
+    redirect_to settings_path
   end
 
   def settings
@@ -94,7 +91,12 @@ class UsersController < ApplicationController
   def fellowers
     @fellower = User.new(params[:user])
     @fellower.save
-    set_acccessability_for_user(@fellower)
+    @access = Accessability.create(:user_id => @fellower.id)
+    @access.role_1 = params[:user][:create_certificates_and_reports]
+    @access.role_2 = params[:user][:signoff_certificates_and_reports]
+    @access.role_3 = params[:user][:access_account_settings]
+    @access.save
+    redirect_to settings_path
   end
 
   def edit_fellowers

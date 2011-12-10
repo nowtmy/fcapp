@@ -1,12 +1,15 @@
 <% @fellowers.each do |user| %>
-  <div class="fellow-list span16" id="fellow_<%= user.id %>" onclick="$('#edit_fellow_fellow_<%= user.id %>').toggle();">
+    <div class="fellow-list span16" id="fellow_<%= user.id %>" onclick="$('#edit_fellow_fellow_<%= user.id %>').toggle();">
       <div class="span4 padding-left-20"><%= user.username %></div>
-      <div class="span4 padding-left-20"><%= user.permission %></div>
-      <div class="span6 padding-left-20"><%= user.accessability_type %></div>
+      <div class="span3 padding-left-20"><%= user.permission %></div>
+      <div class="span5 padding-left-20"><%= user.accessability_type %></div>
+      <div class="mini-menu" style="margin-top: -5px;">
+         <span class="span-float-right"><%= link_to (image_tag 'delete.png'), user, :confirm => 'Are you sure you want to delete this contact?', :method => :delete %></span>
+      </div>
     </div>
     <div class="clear-half"></div>
     <div class="edit_user" id="edit_fellow_fellow_<%= user.id %>" style="display: none;">
-        <%= render :partial => 'settings/shared/edit_fellow_form', :locals => {:fellower => user} %>
+      <%= render :partial => 'settings/shared/edit_fellow_form', :locals => {:fellower => user} %>
     </div>
 <% end %>
 
