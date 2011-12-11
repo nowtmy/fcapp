@@ -37,7 +37,7 @@
       </div>
       <div class="right-side-form span5">
         <div class="input" style="margin-top: -15px;">
-          <%= form_for(@user, :html => { :multipart => true }) do |f| %>
+          <%= form_for(@user, :html => { :multipart => true }, :url => upload_profile_picture_user_path(current_user.id, :user_id => @user.id) ) do |f| %>
               <%= f.file_field :profile %>
               </div>
               </div>

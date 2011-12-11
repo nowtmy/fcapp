@@ -298,3 +298,8 @@ input.xwidth{
     margin-left: 10px;
     margin-top: -16px;
 }
+
+.clear-fellow-edit{
+    clear: both;
+    height: 20px;
+}

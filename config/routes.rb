@@ -25,10 +25,9 @@ Web::Application.routes.draw do
 
 
   resources :users do
-    member do
-      post 'fellowers'
-      post 'edit_fellowers'
-    end
+     post 'fellowers', :on => :member
+     post 'edit_fellowers', :on => :member
+     put 'upload_profile_picture', :on => :member
   end
 
   # The priority is based upon order of creation:

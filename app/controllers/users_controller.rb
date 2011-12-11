@@ -64,7 +64,6 @@ class UsersController < ApplicationController
           @access.role_3 = params[:user][:access_account_settings]
           @access.save
         end
-
         format.html { redirect_to(settings_path, :notice => 'User was successfully updated.') }
         format.xml { head :ok }
       else
@@ -100,6 +99,15 @@ class UsersController < ApplicationController
 
   def edit_fellowers
 
+  end
+
+  def upload_profile_picture
+      @user = User.find(params[:id])
+       if @user.update_attributes(params[:user])
+           redirect_to settings_path
+       else
+         params[:user][:profile]
+       end
   end
 end
 
