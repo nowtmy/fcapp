@@ -17,10 +17,10 @@ class User < ActiveRecord::Base
   attr_accessor :first_name
   attr_accessor :last_name
 
-  attr_accessor :create_certificates_and_reports
-  attr_accessor :signoff_certificates_and_reports
-  attr_accessor :access_account_settings
-  attr_accessor :fellow_flag
+  attr_accessor :account_master
+  attr_accessor :qualified_supervisor
+  attr_accessor :electrician
+  attr_accessor :administrator
 
 
   has_many :fellowers, :class_name => "User", :foreign_key => 'parent_id'
@@ -53,31 +53,40 @@ class User < ActiveRecord::Base
   def accessability_type
     array = []
     if accessability.role_1?
-      array.push "Create Certificates And Reports"
+      array.push "Account Master"
     end
     if accessability.role_2?
-      array.push "Sign Off Certificates And Reports"
+      array.push "Qualified Supervisor"
     end
     if self.accessability.role_3?
-      array.push "Access Account Settings"
+      array.push "Electrician"
+    end
+    if self.accessability.role_4?
+      array.push "Administrator"
     end
     array.join(',')
   end
 
-  def create_certificates_and_reports
+  def account_master
       if !self.accessability.nil?
         self.accessability.role_1?
       end
   end
 
-  def signoff_certificates_and_reports
+  def qualified_supervisor
       if !self.accessability.nil?
         self.accessability.role_2?
       end
   end
-  def access_account_settings
+  def electrician
       if !self.accessability.nil?
         self.accessability.role_3?
+      end
+  end
+
+  def administrator
+      if !self.accessability.nil?
+        self.accessability.role_4?
       end
   end
 

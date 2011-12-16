@@ -232,7 +232,7 @@ input.xwidth{
 
 .clear-company-field{
     clear: both;
-    height: 20.5px;
+    height: 20.85px;
 }
 
 .role-box{
@@ -245,7 +245,7 @@ input.xwidth{
     width: auto;
     height: 21.8px;
     line-height: 20px;
-    padding-top: 9.5px;
+    padding-top: 9.15px;
 }
 
 .company-edit-box{
@@ -302,4 +302,23 @@ input.xwidth{
 .clear-fellow-edit{
     clear: both;
     height: 20px;
+}
+.clear_form_area{
+    clear: both;
+    height: 4px;
+}
+
+.clear_form_label_area{
+     clear: both;
+    height: 1px;
+}
+
+.company_clear_area{
+    height: 1px;
+    margin-bottom:  -4px;
+}
+
+.company_clear_form_area{
+    height: 5px;
+    margin-bottom:  1px;
 }

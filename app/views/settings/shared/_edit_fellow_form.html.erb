@@ -5,29 +5,28 @@
       <div class="left-side-form span3">
         <label for="first_name"></label><span><p class="label">Last Name</p></span>
 
+        <div class="clear_form_label_area"></div>
         <div class="clear-fellow-edit"></div>
         <label for="last_name"></label><span><p class="label">First Name</p></span>
 
+        <div class="clear_form_label_area"></div>
         <div class="clear-fellow-edit"></div>
         <label for="email"></label><span><p class="label">Email</p></span>
 
-        <div class="clear-fellow-edit"></div>
-        <label for="permission"></label><span><p class="label">Permission</p></span>
-
+        <div class="clear_form_label_area"></div>
         <div class="clear-fellow-edit"></div>
         <label for="password"></label><span><p class="label">Password</p></span>
-
+        <div class="clear_form_label_area"></div>
         <div class="clear-fellow-edit"></div>
         <label for="password_confirmation"></label><span><p class="label">Confirm Password</p></span>
       </div>
       <div class="right-side-form span4">
+        <div class="clear_form_area"></div>
         <%= f.text_field :first_name, :class => 'xheight xlarge mini' %>
         <div class="clear3"></div>
         <%= f.text_field :last_name, :class => 'xheight xlarge mini' %>
         <div class="clear3"></div>
         <%= f.text_field :email, :class => 'xheight xlarge mini' %>
-        <div class="clear3"></div>
-        <%= f.select :permission, [['Electrician', 'Electrician'], ['Account Master', 'Account Master'], ['Qualified Supervisor','Qualified Supervisor']], :class => 'xheight xlarge mini' %>
         <div class="clear3"></div>
         <%= f.password_field :password, :class => 'xheight xlarge mini' %>
         <div class="clear3"></div>
@@ -35,24 +34,30 @@
         <div class="clear-company-field"></div>
       </div>
       <div class="span5 role-box" style="margin-top: -20px">
-        <h2 style="color: #595959;">Access and Permission</h2>
+        <h2 style="color: #595959;">User Roles</h2>
+
         <div class="clear2"></div>
         <div class="access-permission">
-          <div class="accessability span"><%= f.check_box :create_certificates_and_reports  %></div>
-          <p>&nbsp; CREATE CERTIFICATES & REPORTS</p>
+          <div class="accessability span"><%= f.check_box :account_master %></div>
+          <p>&nbsp; Account Master</p>
         </div>
         <div class="clear2"></div>
         <div class="access-permission">
-          <div class="accessability span"><%= f.check_box :signoff_certificates_and_reports %></div>
-          <p>&nbsp; SIGN OFF CERTIFICATES & REPORTS</p>
+          <div class="accessability span"><%= f.check_box :qualified_supervisor %></div>
+          <p>&nbsp; Qualified Supervisor</p>
         </div>
         <div class="clear2"></div>
         <div class="access-permission">
-          <div class="accessability span"><%= f.check_box :access_account_settings %></div>
-          <p>&nbsp; ACCESS ACCOUNT SETTINGS</p>
+          <div class="accessability span"><%= f.check_box :electrician %></div>
+          <p>&nbsp; Electrician</p>
+        </div>
+        <div class="access-permission">
+          <div class="clear2"></div>
+          <div class="accessability span"><%= f.check_box :administrator %></div>
+          <p>&nbsp; Administration</p>
         </div>
       </div>
       <div class="clear"></div>
-      <%= f.submit 'Update',:disable_with => 'Updating..', :class => 'btn' %>
+      <%= f.submit 'Update', :disable_with => 'Updating..', :class => 'btn' %>
   <% end %>
- </div>
+</div>

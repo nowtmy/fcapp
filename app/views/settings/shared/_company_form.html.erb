@@ -33,7 +33,9 @@
     <label for="Post"></label><span><p class="label">Post</p></span>
   </div>
     <% if !@company.nil? %>
+
   <div class="right-side-form span5">
+   <div class="company_clear_area"></div>
     <div class="company-list">
       <%= @company.name %>
     </div>
@@ -124,7 +126,10 @@
           <div class="clear2"></div>
           <label for="Post"></label><span><p class="label">Post</p></span>
         </div>
+
         <div class="right-side-form span5">
+        <div class="company_clear_form_area"></div>
+
           <%= f.text_field :name, :class => 'xheight xlarge xwidth mini' %>
           <div class="clear-company-field"></div>
           <%= f.text_field :office_telephone, :class => 'xheight xwidth xlarge mini' %>
