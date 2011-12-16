@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/settings.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="234" column="19" selection-start="3111" selection-end="3111" vertical-scroll-proportion="0.20547946">
+            <state line="243" column="2" selection-start="3191" selection-end="3193" vertical-scroll-proportion="-9.444445">
               <folding />
             </state>
           </provider>
@@ -52,6 +52,33 @@
       </file>
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/settings/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="16" selection-start="1013" selection-end="1013" vertical-scroll-proportion="-1.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/settings.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="98" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.40687162">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_accreditation_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/settings/shared/_accreditation_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
@@ -100,22 +127,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/stylesheets/bootstrap.css" />
         <option value="$PROJECT_DIR$/app/controllers/settings_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/companies_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/contacts/new.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/settings/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/settings/shared/_fellowers.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/settings/shared/_user_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/settings/shared/_edit_fellow_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/settings.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/contact.html.erb" />
         <option value="$PROJECT_DIR$/app/views/contacts/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/settings/shared/_company_form.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/settings.css" />
+        <option value="$PROJECT_DIR$/app/views/settings/shared/_accreditation_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/settings/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/settings.html.erb" />
       </list>
     </option>
   </component>
@@ -656,23 +683,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/settings/shared/_fellowers.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="50" selection-start="274" selection-end="274" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20111209025821_create_accessabilities.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/settings/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="45" selection-start="2465" selection-end="2465" vertical-scroll-proportion="0.7011278">
           <folding />
         </state>
       </provider>
@@ -719,37 +732,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/settings.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="246" selection-start="530" selection-end="530" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/contact.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="246" selection-start="549" selection-end="549" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/contacts/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="23" selection-start="1479" selection-end="1479" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/settings/shared/_user_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="35" selection-start="2843" selection-end="2843" vertical-scroll-proportion="-22.333334">
           <folding />
         </state>
       </provider>
@@ -761,9 +746,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/contact.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="246" selection-start="549" selection-end="549" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/settings.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="234" column="19" selection-start="3111" selection-end="3111" vertical-scroll-proportion="0.20547946">
+        <state line="243" column="2" selection-start="3191" selection-end="3193" vertical-scroll-proportion="-9.444445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/settings/shared/_accreditation_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/settings/shared/_user_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="35" selection-start="2843" selection-end="2843" vertical-scroll-proportion="-22.333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/settings/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="16" selection-start="1013" selection-end="1013" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/settings.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="98" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.40687162">
           <folding />
         </state>
       </provider>

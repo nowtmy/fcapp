@@ -11,10 +11,10 @@
     <div class="common-wrapper">
       <div class="row">
         <div class="span4"><%= image_tag 'logo_topbar.png' %><span class="contactTopSpan" style="margin-right: -4px;margin-left: 8px;"><%= link_to (image_tag 'contact_topbar_icon.png',:alt => 'contact' ,:class => 'contactHover'), new_contact_path, :alt=> 'icon contact' %></span><%= link_to (image_tag 'certs_topbar_icon.png', :class => 'certHover', :alt => 'icon Certificates and Reports'), settings_path %></div>
-        <div class="span2 new-contact-link" style="margin-right: 5px;"><%= link_to 'Company Details', "#", :id=> 'addContactLink' %></div>
-        <div class="span2 new-contact-link" style="margin-right: -15px;"><%= link_to 'Accreditation', "#", :id=> 'addContactLink' %></div>
-        <div class="span1 new-contact-link" style="margin-right: -5px;"><%= link_to 'Logo', "#", :id=> 'addContactLink' %></div>
-        <div class="span1 new-contact-link" style="margin-right: 0px;"><%= link_to 'Users', "#", :id=> 'addContactLink' %></div>
+        <div class="span2 new-contact-link" style="margin-right: 5px;"><%= link_to 'Company Details', "#cmp", :id=> 'addContactLink' %></div>
+        <div class="span2 new-contact-link" style="margin-right: -15px;"><%= link_to 'Accreditation', "#acr", :id=> 'addContactLink' %></div>
+        <div class="span1 new-contact-link" style="margin-right: -5px;"><%= link_to 'Logo', "#logo", :id=> 'addContactLink' %></div>
+        <div class="span1 new-contact-link" style="margin-right: 0px;"><%= link_to 'Users', "#user", :id=> 'addContactLink' %></div>
         <div class="span2 new-contact-link" style="margin-right: -8px;"><%= link_to 'Billings', "#", :id=> 'addContactLink' %></div>
         <div class="span3 right-panel">
           <span class="help">Help</span>|<span class="user"><%= current_user.username %></span></div>
