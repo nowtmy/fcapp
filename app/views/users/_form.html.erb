@@ -1,5 +1,16 @@
 
-<%= form_for(@user, :remote => true) do |f| %>
+<%= form_for(@user) do |f| %>
+    <% if @user.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@user.errors.count, "error") %> prohibited this company from being saved:</h2>
+
+    <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
     <div class="span8">
       <div class="clear1"></div>
       <div class="span4 spaceright">
@@ -18,9 +29,9 @@
       </div>
       <div class="clear1"></div>
       <div class="span4">
-        <%= f.label :company,'Company Name' ,:class => 'signup-label' %>
+        <%= f.label :company_name,'Company Name' ,:class => 'signup-label' %>
         <div class="clear1"></div>
-        <%= f.text_field :company, :class => 'signup-special-label' %>
+        <%= f.text_field :company_name, :class => 'signup-special-label' %>
       </div>
       <div class="clear1"></div>
       <div class="span6">

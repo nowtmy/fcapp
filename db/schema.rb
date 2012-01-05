@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111216130450) do
+ActiveRecord::Schema.define(:version => 20120105104637) do
 
   create_table "accessabilities", :force => true do |t|
     t.boolean  "role_1"
@@ -72,9 +72,19 @@ ActiveRecord::Schema.define(:version => 20111216130450) do
     t.integer  "user_id"
   end
 
+  create_table "logos", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "roles", :force => true do |t|
     t.integer  "user_id"
     t.string   "type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "signatures", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -96,7 +106,7 @@ ActiveRecord::Schema.define(:version => 20111216130450) do
     t.string   "last_login_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "company"
+    t.string   "company_name"
     t.integer  "accreditation_id"
     t.integer  "parent_id"
     t.string   "permission"
